@@ -29,4 +29,4 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ##Publications
 <div id="text"></div>
-	
+<script src="publications_list.js"></script>
