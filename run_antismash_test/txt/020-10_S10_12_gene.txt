@@ -1,0 +1,15 @@
+gene ID	gene start	gene end	gene strand	smCOG	locus_tag	annotation
+X_020-10_S10_03638	97	961	+		020-10_S10_03638	Anaerobic dimethyl sulfoxide reductase chain C
+X_020-10_S10_03639	1235	2384	+		020-10_S10_03639	putative MFS-type transporter YcaD
+X_020-10_S10_03640	2546	3287	-		020-10_S10_03640	Pyruvate formate-lyase 1-activating enzyme
+X_020-10_S10_03641	3478	5761	-		020-10_S10_03641	Formate acetyltransferase 1
+X_020-10_S10_03642	5812	6670	-		020-10_S10_03642	putative formate transporter 1
+X_020-10_S10_03643	7055	8816	-		020-10_S10_03643	Ribosomal protein S12 methylthiotransferase accessory factor YcaO
+X_020-10_S10_03644	8931	9624	+		020-10_S10_03644	hypothetical protein
+X_020-10_S10_03645	9812	10901	+		020-10_S10_03645	Phosphoserine aminotransferase
+X_020-10_S10_03646	10974	12258	+		020-10_S10_03646	3-phosphoshikimate 1-carboxyvinyltransferase
+X_020-10_S10_03647	12432	13116	+		020-10_S10_03647	Cytidylate kinase
+X_020-10_S10_03648	13249	14923	+		020-10_S10_03648	30S ribosomal protein S1
+X_020-10_S10_03649	15074	15362	+		020-10_S10_03649	Integration host factor subunit beta
+X_020-10_S10_03650	15567	17832	+		020-10_S10_03650	ComE operon protein 3
+X_020-10_S10_03651	17868	19617	+		020-10_S10_03651	Lipid A export ATP-binding/permease protein MsbA

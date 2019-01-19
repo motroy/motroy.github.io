@@ -1,0 +1,2 @@
+signature gene	pHMM hits	e-value	bit score	number of seeds
+X_020-10_S10_04480	TIGR03651	7.5e-06	18.8	9

@@ -1,0 +1,3 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+AJW76721.1	inner-membrane_translocator	BGC0001196_c1	Desotamide_biosynthetic_gene_cluster	38	92.7710843373	159	6.3e-39
+CAQ64721.1	sugar_ABC_transporter,_permease_protein	BGC0000087_c1	Lasalocid_biosynthetic_gene_cluster	31	88.2530120482	113	3.9e-25

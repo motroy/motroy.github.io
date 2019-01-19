@@ -1,0 +1,24 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+AMK48236.1	iron_ABC_transporter_permease	BGC0001351_c1	Cahuitamycins_biosynthetic_gene_cluster	45	97.5757575758	254	1.9e-67
+EFL06873.1	predicted_protein	BGC0000300_c1	Amychelin_biosynthetic_gene_cluster	47	97.2727272727	247	2.3e-65
+WP_039795885.1	membrane_protein	BGC0001211_c1	Albachelin_biosynthetic_gene_cluster	46	94.5454545455	244	1.5e-64
+ACU36656.1	transport_system_permease_protein	BGC0000392_c1	Mirubactin_biosynthetic_gene_cluster	43	97.5757575758	228	1.1e-59
+NP_230427.1	ferric_vibriobactin_ABC_transporter_permease	BGC0000945_c1	Vibriobactin_biosynthetic_gene_cluster	43	97.5757575758	225	1.2e-58
+CAB53326.1	putative_iron-siderophore_permease_transmembrane_protein	BGC0000325_c1	Coelichelin_biosynthetic_gene_cluster	41	97.8787878788	213	3.6e-55
+CBG75494.1	putative_siderophore_transport_system_integral_membrane_component,_FecCD_family	BGC0000423_c1	Scabichelin_biosynthetic_gene_cluster	38	97.5757575758	195	7.8e-50
+AGE11896.1	ABC_transporter	BGC0000366_c1	Gobichelin_biosynthetic_gene_cluster	38	97.8787878788	190	3.3e-48
+AEZ64559.1	Fe3+_siderophore_ABC_transporter_permease	BGC0001065_c1	Herboxidiene_biosynthetic_gene_cluster	35	99.0909090909	172	7.1e-43
+ABM30207.1	PvuD	BGC0000947_c1	Vibrioferrin_biosynthetic_gene_cluster	37	95.4545454545	158	1.1e-38
+CBA63668.1	siderophore_uptake_membrane_transporter	BGC0000368_c1	Griseobactin_biosynthetic_gene_cluster	34	98.1818181818	154	2.6e-37
+WP_020635025.1	hypothetical_protein	BGC0001211_c1	Albachelin_biosynthetic_gene_cluster	35	98.1818181818	150	2.9e-36
+EFL06872.1	predicted_protein	BGC0000300_c1	Amychelin_biosynthetic_gene_cluster	34	96.0606060606	146	5.4e-35
+CAG38694.1	transport_protein	BGC0000708_c1	Lividomycin_biosynthetic_gene_cluster	35	94.8484848485	146	5.4e-35
+AMK48235.1	iron_ABC_transporter_permease	BGC0001351_c1	Cahuitamycins_biosynthetic_gene_cluster	36	99.696969697	143	3.5e-34
+AEZ64560.1	Fe3+-siderophore_ABC_transporter_permease	BGC0001065_c1	Herboxidiene_biosynthetic_gene_cluster	34	95.4545454545	136	5.6e-32
+CBG75493.1	putative_siderophore_transport_system_integral_membrane_component,_FecCD_family	BGC0000423_c1	Scabichelin_biosynthetic_gene_cluster	33	98.7878787879	133	4.8e-31
+ABM30206.1	PvuC	BGC0000947_c1	Vibrioferrin_biosynthetic_gene_cluster	34	99.3939393939	132	8.1e-31
+ACU36657.1	transport_system_permease_protein	BGC0000392_c1	Mirubactin_biosynthetic_gene_cluster	32	93.9393939394	126	4.5e-29
+NP_230426.1	ferric_vibriobactin_ABC_transporter_permease	BGC0000945_c1	Vibriobactin_biosynthetic_gene_cluster	32	95.4545454545	123	6.4e-28
+AGE11897.1	iron_siderophore_transporter	BGC0000366_c1	Gobichelin_biosynthetic_gene_cluster	32	97.2727272727	121	1.4e-27
+ABS50190.1	putative_transport_system_permease_protein	BGC0000410_c1	Pseudomonine_biosynthetic_gene_cluster	27	83.3333333333	78	1.4e-14
+BAC87899.1	probable_ferric_acinetobactin_transport_system_permease_protein	BGC0000294_c1	Acinetobactin_biosynthetic_gene_cluster	24	83.9393939394	72	1.3e-12

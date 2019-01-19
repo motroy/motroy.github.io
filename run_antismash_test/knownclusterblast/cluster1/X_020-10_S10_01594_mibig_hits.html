@@ -1,0 +1,2168 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<!-- js section -->
+<!-- jQuery  -->
+<script type="text/javascript"
+        src="../../js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" src="../../js/jquery.tmpl-1.0.0pre.js"></script>
+
+  <!-- jQuery UI Support -->
+<script type="text/javascript"
+        src="../../js/jquery-ui-1.10.4.custom.min.js"></script>
+
+ <!-- Alpaca -->
+<script type="text/javascript" src="../../js/alpaca-full-mibig.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody> 
+            <tr>
+                <td>ACY02013.1</td>
+                <td>enterobactin_synthase_subunit_E</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000343/index.html#cluster-1">BGC0000343</a></td>
+                <td>Enterobactin_biosynthetic_gene_cluster</td>
+                <td>61</td>
+                <td>99.8130841121</td>
+                <td>626</td>
+                <td>2.2e-179</td>
+            </tr>
+            
+            <tr>
+                <td>ACR11042.1</td>
+                <td>Enterobactin_synthetase_component_E/2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000451/index.html#cluster-1">BGC0000451</a></td>
+                <td>Turnerbactin_biosynthetic_gene_cluster</td>
+                <td>56</td>
+                <td>98.3177570093</td>
+                <td>586</td>
+                <td>4.4e-167</td>
+            </tr>
+            
+            <tr>
+                <td>BAC87906.1</td>
+                <td>probable_acinetobactin_biosynthesis_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000294/index.html#cluster-1">BGC0000294</a></td>
+                <td>Acinetobactin_biosynthetic_gene_cluster</td>
+                <td>55</td>
+                <td>99.8130841121</td>
+                <td>574</td>
+                <td>1.7e-163</td>
+            </tr>
+            
+            <tr>
+                <td>AAG31128.1</td>
+                <td>MxcE</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001345/index.html#cluster-1">BGC0001345</a></td>
+                <td>Myxochelin_biosynthetic_gene_cluster</td>
+                <td>48</td>
+                <td>99.0654205607</td>
+                <td>487</td>
+                <td>1.6e-137</td>
+            </tr>
+            
+            <tr>
+                <td>NP_230421.1</td>
+                <td>vibriobactin-specific_2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000945/index.html#cluster-1">BGC0000945</a></td>
+                <td>Vibriobactin_biosynthetic_gene_cluster</td>
+                <td>48</td>
+                <td>99.2523364486</td>
+                <td>487</td>
+                <td>2.1e-137</td>
+            </tr>
+            
+            <tr>
+                <td>AAO07759.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000460/index.html#cluster-1">BGC0000460</a></td>
+                <td>Vulnibactin_biosynthetic_gene_cluster</td>
+                <td>48</td>
+                <td>100.747663551</td>
+                <td>482</td>
+                <td>6.8e-136</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ45636.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000454/index.html#cluster-1">BGC0000454</a></td>
+                <td>Vanchrobactin_biosynthetic_gene_cluster</td>
+                <td>49</td>
+                <td>99.0654205607</td>
+                <td>480</td>
+                <td>2.6e-135</td>
+            </tr>
+            
+            <tr>
+                <td>CBA63660.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000368/index.html#cluster-1">BGC0000368</a></td>
+                <td>Griseobactin_biosynthetic_gene_cluster</td>
+                <td>49</td>
+                <td>98.8785046729</td>
+                <td>478</td>
+                <td>1.3e-134</td>
+            </tr>
+            
+            <tr>
+                <td>ABS75234.1</td>
+                <td>DhbE</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001185/index.html#cluster-1">BGC0001185</a></td>
+                <td>Bacillibactin_biosynthetic_gene_cluster</td>
+                <td>47</td>
+                <td>100.0</td>
+                <td>477</td>
+                <td>2.2e-134</td>
+            </tr>
+            
+            <tr>
+                <td>CAB15188.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000309/index.html#cluster-1">BGC0000309</a></td>
+                <td>Bacillibactin_biosynthetic_gene_cluster</td>
+                <td>47</td>
+                <td>100.186915888</td>
+                <td>467</td>
+                <td>2.3e-131</td>
+            </tr>
+            
+            <tr>
+                <td>AEI70243.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000401/index.html#cluster-1">BGC0000401</a></td>
+                <td>Paenibactin_biosynthetic_gene_cluster</td>
+                <td>47</td>
+                <td>99.8130841121</td>
+                <td>461</td>
+                <td>1.2e-129</td>
+            </tr>
+            
+            <tr>
+                <td>AAZ55904.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000359/index.html#cluster-1">BGC0000359</a></td>
+                <td>Fuscachelin_biosynthetic_gene_cluster</td>
+                <td>47</td>
+                <td>100.560747664</td>
+                <td>457</td>
+                <td>2.3e-128</td>
+            </tr>
+            
+            <tr>
+                <td>BAH33406.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000371/index.html#cluster-1">BGC0000371</a></td>
+                <td>Heterobactin_biosynthetic_gene_cluster</td>
+                <td>46</td>
+                <td>99.8130841121</td>
+                <td>454</td>
+                <td>1.5e-127</td>
+            </tr>
+            
+            <tr>
+                <td>AMK48234.1</td>
+                <td>salicylate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001351/index.html#cluster-1">BGC0001351</a></td>
+                <td>Cahuitamycins_biosynthetic_gene_cluster</td>
+                <td>47</td>
+                <td>100.373831776</td>
+                <td>454</td>
+                <td>2e-127</td>
+            </tr>
+            
+            <tr>
+                <td>EFL06871.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000300/index.html#cluster-1">BGC0000300</a></td>
+                <td>Amychelin_biosynthetic_gene_cluster</td>
+                <td>48</td>
+                <td>100.0</td>
+                <td>442</td>
+                <td>7.8e-124</td>
+            </tr>
+            
+            <tr>
+                <td>AGE11892.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000366/index.html#cluster-1">BGC0000366</a></td>
+                <td>Gobichelin_biosynthetic_gene_cluster</td>
+                <td>44</td>
+                <td>99.2523364486</td>
+                <td>423</td>
+                <td>4.9e-118</td>
+            </tr>
+            
+            <tr>
+                <td>AEF33098.1</td>
+                <td>3-hydroxypicolinic_acid:AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001039/index.html#cluster-1">BGC0001039</a></td>
+                <td>Pyridomycin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>99.8130841121</td>
+                <td>423</td>
+                <td>4.9e-118</td>
+            </tr>
+            
+            <tr>
+                <td>CBW45758.1</td>
+                <td>PI_synthetase_1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000952_c3/index.html#cluster-1">BGC0000952_c3</a></td>
+                <td>Pristinamycin_biosynthetic_gene_cluster</td>
+                <td>46</td>
+                <td>100.747663551</td>
+                <td>421</td>
+                <td>1.4e-117</td>
+            </tr>
+            
+            <tr>
+                <td>ACU36660.1</td>
+                <td>AMP-dependent_synthetase_and_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000392/index.html#cluster-1">BGC0000392</a></td>
+                <td>Mirubactin_biosynthetic_gene_cluster</td>
+                <td>45</td>
+                <td>101.682242991</td>
+                <td>418</td>
+                <td>1.2e-116</td>
+            </tr>
+            
+            <tr>
+                <td>ADE34495.1</td>
+                <td>SsfL1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000269/index.html#cluster-1">BGC0000269</a></td>
+                <td>SF2575_biosynthetic_gene_cluster</td>
+                <td>44</td>
+                <td>100.186915888</td>
+                <td>410</td>
+                <td>2.5e-114</td>
+            </tr>
+            
+            <tr>
+                <td>ADB92576.1</td>
+                <td>Ccb2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001225/index.html#cluster-1">BGC0001225</a></td>
+                <td>Celesticetin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>101.121495327</td>
+                <td>410</td>
+                <td>3.3e-114</td>
+            </tr>
+            
+            <tr>
+                <td>EYT83445.1</td>
+                <td>Triostin_synthetase_I</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001213/index.html#cluster-1">BGC0001213</a></td>
+                <td>Nataxazole_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>100.186915888</td>
+                <td>404</td>
+                <td>1.4e-112</td>
+            </tr>
+            
+            <tr>
+                <td>CAC17498.1</td>
+                <td>putative_AMP-binding_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000324/index.html#cluster-1">BGC0000324</a></td>
+                <td>Coelibactin_biosynthetic_gene_cluster</td>
+                <td>43</td>
+                <td>102.242990654</td>
+                <td>403</td>
+                <td>3.1e-112</td>
+            </tr>
+            
+            <tr>
+                <td>AFB35629.1</td>
+                <td>EsmD2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000935/index.html#cluster-1">BGC0000935</a></td>
+                <td>Esmeraldin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>101.869158879</td>
+                <td>400</td>
+                <td>2.6e-111</td>
+            </tr>
+            
+            <tr>
+                <td>AGN74880.1</td>
+                <td>3-hydroxypicolinic_acid:AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000459/index.html#cluster-1">BGC0000459</a></td>
+                <td>Griseoviridin_/_viridogrisein_biosynthetic_gene_cluster</td>
+                <td>43</td>
+                <td>98.8785046729</td>
+                <td>399</td>
+                <td>4.4e-111</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ34366.1</td>
+                <td>putative_3-hydroxy-quinaldate-AMP-Ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000445/index.html#cluster-1">BGC0000445</a></td>
+                <td>Thiocoraline_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>98.1308411215</td>
+                <td>391</td>
+                <td>2.1e-108</td>
+            </tr>
+            
+            <tr>
+                <td>AAM77987.1</td>
+                <td>adenylate_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000112/index.html#cluster-1">BGC0000112</a></td>
+                <td>Neocarzinostatin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>100.560747664</td>
+                <td>387</td>
+                <td>2.3e-107</td>
+            </tr>
+            
+            <tr>
+                <td>ALE27504.1</td>
+                <td>3-HPA:AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001292/index.html#cluster-1">BGC0001292</a></td>
+                <td>A33853_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>100.373831776</td>
+                <td>377</td>
+                <td>2.4e-104</td>
+            </tr>
+            
+            <tr>
+                <td>ABY66018.1</td>
+                <td>CoA_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001008/index.html#cluster-1">BGC0001008</a></td>
+                <td>Maduropeptin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>100.373831776</td>
+                <td>374</td>
+                <td>1.5e-103</td>
+            </tr>
+            
+            <tr>
+                <td>BAE98151.1</td>
+                <td>putative_AMP-binding_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000339/index.html#cluster-1">BGC0000339</a></td>
+                <td>Echinomycin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>98.5046728972</td>
+                <td>373</td>
+                <td>3.4e-103</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ87594.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001055/index.html#cluster-1">BGC0001055</a></td>
+                <td>Yersiniabactin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>94.5794392523</td>
+                <td>373</td>
+                <td>5.8e-103</td>
+            </tr>
+            
+            <tr>
+                <td>CAA73130.1</td>
+                <td>Irp5_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000467/index.html#cluster-1">BGC0000467</a></td>
+                <td>Yersiniabactin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>91.4018691589</td>
+                <td>372</td>
+                <td>9.9e-103</td>
+            </tr>
+            
+            <tr>
+                <td>CCP45172.1</td>
+                <td>Bifunctional_enzyme_MbtA:_salicyl-AMP_ligase_(SAL-AMP_ligase)_+_salicyl-S-ArCP_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001021/index.html#cluster-1">BGC0001021</a></td>
+                <td>Mycobactin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>99.4392523364</td>
+                <td>371</td>
+                <td>1.3e-102</td>
+            </tr>
+            
+            <tr>
+                <td>ACN64830.1</td>
+                <td>PokM3</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001061/index.html#cluster-1">BGC0001061</a></td>
+                <td>Polyketomycin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>101.495327103</td>
+                <td>371</td>
+                <td>1.7e-102</td>
+            </tr>
+            
+            <tr>
+                <td>AAO07763.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000460/index.html#cluster-1">BGC0000460</a></td>
+                <td>Vulnibactin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>98.3177570093</td>
+                <td>368</td>
+                <td>1.4e-101</td>
+            </tr>
+            
+            <tr>
+                <td>AFD30957.1</td>
+                <td>CrmE</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000966/index.html#cluster-1">BGC0000966</a></td>
+                <td>Caerulomycin_A_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>100.560747664</td>
+                <td>364</td>
+                <td>2.7e-100</td>
+            </tr>
+            
+            <tr>
+                <td>AEM06018.2</td>
+                <td>hypothetical_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000966/index.html#cluster-1">BGC0000966</a></td>
+                <td>Caerulomycin_A_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>100.560747664</td>
+                <td>364</td>
+                <td>2.7e-100</td>
+            </tr>
+            
+            <tr>
+                <td>AFV52187.1</td>
+                <td>acyl-CoA_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000081/index.html#cluster-1">BGC0000081</a></td>
+                <td>Kedarcidin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>100.373831776</td>
+                <td>363</td>
+                <td>3.5e-100</td>
+            </tr>
+            
+            <tr>
+                <td>BAH04171.1</td>
+                <td>AMP-binding_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000450/index.html#cluster-1">BGC0000450</a></td>
+                <td>Triostin_A_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>98.691588785</td>
+                <td>361</td>
+                <td>1.7e-99</td>
+            </tr>
+            
+            <tr>
+                <td>AET98914.1</td>
+                <td>putative_AMP-binding_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000415/index.html#cluster-1">BGC0000415</a></td>
+                <td>Quinomycin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>98.691588785</td>
+                <td>356</td>
+                <td>4.3e-98</td>
+            </tr>
+            
+            <tr>
+                <td>BAI63284.1</td>
+                <td>putative_peptide_arylation_enzyme</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000434/index.html#cluster-1">BGC0000434</a></td>
+                <td>SW-163_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>98.5046728972</td>
+                <td>356</td>
+                <td>4.3e-98</td>
+            </tr>
+            
+            <tr>
+                <td>CAG69514.1</td>
+                <td>2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000352/index.html#cluster-1">BGC0000352</a></td>
+                <td>Fimsbactin_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>99.2523364486</td>
+                <td>344</td>
+                <td>2.2e-94</td>
+            </tr>
+            
+            <tr>
+                <td>CCC55917.1</td>
+                <td>putative_acyl_CoA_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000973/index.html#cluster-1">BGC0000973</a></td>
+                <td>Collismycin_A_biosynthetic_gene_cluster</td>
+                <td>38</td>
+                <td>100.373831776</td>
+                <td>326</td>
+                <td>8.1e-89</td>
+            </tr>
+            
+            <tr>
+                <td>ADQ74621.1</td>
+                <td>salicylyl-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000921/index.html#cluster-1">BGC0000921</a></td>
+                <td>Promysalin_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>96.4485981308</td>
+                <td>324</td>
+                <td>1.8e-88</td>
+            </tr>
+            
+            <tr>
+                <td>CAP20363.1</td>
+                <td>equibactin_siderophore_biosynthetic_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000347/index.html#cluster-1">BGC0000347</a></td>
+                <td>Equibactin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>95.7009345794</td>
+                <td>298</td>
+                <td>1.4e-80</td>
+            </tr>
+            
+            <tr>
+                <td>BAG16281.1</td>
+                <td>putative_2,3-dihydroxybenzoate-AMP_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000632/index.html#cluster-1">BGC0000632</a></td>
+                <td>Brasilicardin_A_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>95.1401869159</td>
+                <td>280</td>
+                <td>3.9e-75</td>
+            </tr>
+            
+            <tr>
+                <td>AHH25585.1</td>
+                <td>AMP-dependent_synthetase_and_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000957/index.html#cluster-1">BGC0000957</a></td>
+                <td>Ansatrienin_(mycotrienin)_biosynthetic_gene_cluster</td>
+                <td>29</td>
+                <td>96.261682243</td>
+                <td>180</td>
+                <td>7.2e-45</td>
+            </tr>
+            
+            <tr>
+                <td>AGY30675.1</td>
+                <td>Ann3</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001298/index.html#cluster-1">BGC0001298</a></td>
+                <td>4-Z-annimycin_biosynthetic_gene_cluster</td>
+                <td>28</td>
+                <td>94.0186915888</td>
+                <td>152</td>
+                <td>1.6e-36</td>
+            </tr>
+            
+            <tr>
+                <td>CAH10130.1</td>
+                <td>feruloyl-CoA_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000268/index.html#cluster-1">BGC0000268</a></td>
+                <td>Sch47554_/_Sch47555_biosynthetic_gene_cluster</td>
+                <td>28</td>
+                <td>92.3364485981</td>
+                <td>150</td>
+                <td>4.7e-36</td>
+            </tr>
+            
+            <tr>
+                <td>AAX98210.1</td>
+                <td>acyl_CoA_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000052/index.html#cluster-1">BGC0000052</a></td>
+                <td>ECO-02301_biosynthetic_gene_cluster</td>
+                <td>29</td>
+                <td>95.8878504673</td>
+                <td>150</td>
+                <td>6.1e-36</td>
+            </tr>
+            
+            <tr>
+                <td>ADI58647.1</td>
+                <td>AsuD3</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000187/index.html#cluster-1">BGC0000187</a></td>
+                <td>Asukamycin_biosynthetic_gene_cluster</td>
+                <td>29</td>
+                <td>89.1588785047</td>
+                <td>141</td>
+                <td>3.7e-33</td>
+            </tr>
+            
+            <tr>
+                <td>AAF81723.1</td>
+                <td>putative_acyl-CoA_ligase_EncH</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000220/index.html#cluster-1">BGC0000220</a></td>
+                <td>Enterocin_biosynthetic_gene_cluster</td>
+                <td>28</td>
+                <td>92.1495327103</td>
+                <td>140</td>
+                <td>6.3e-33</td>
+            </tr>
+            
+            <tr>
+                <td>AHZ34233.1</td>
+                <td>CifB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000323/index.html#cluster-1">BGC0000323</a></td>
+                <td>Cichofactin_biosynthetic_gene_cluster</td>
+                <td>28</td>
+                <td>94.953271028</td>
+                <td>134</td>
+                <td>3.5e-31</td>
+            </tr>
+            
+            <tr>
+                <td>CBG75492.1</td>
+                <td>putative_NRPS/siderophore_biosynthesis_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000423/index.html#cluster-1">BGC0000423</a></td>
+                <td>Scabichelin_biosynthetic_gene_cluster</td>
+                <td>28</td>
+                <td>102.429906542</td>
+                <td>131</td>
+                <td>3.8e-30</td>
+            </tr>
+            
+            <tr>
+                <td>AHZ34232.1</td>
+                <td>CifA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000323/index.html#cluster-1">BGC0000323</a></td>
+                <td>Cichofactin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>93.6448598131</td>
+                <td>131</td>
+                <td>3.8e-30</td>
+            </tr>
+            
+            <tr>
+                <td>AAO56328.1</td>
+                <td>non-ribosomal_peptide_synthetase_SyfA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000435/index.html#cluster-1">BGC0000435</a></td>
+                <td>Syringafactin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>94.3925233645</td>
+                <td>128</td>
+                <td>1.9e-29</td>
+            </tr>
+            
+            <tr>
+                <td>AAO62586.1</td>
+                <td>peptide_sythetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001016/index.html#cluster-1">BGC0001016</a></td>
+                <td>Microcystin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>98.5046728972</td>
+                <td>127</td>
+                <td>5.5e-29</td>
+            </tr>
+            
+            <tr>
+                <td>ABD65958.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000341/index.html#cluster-1">BGC0000341</a></td>
+                <td>Enduracidin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>96.8224299065</td>
+                <td>125</td>
+                <td>2.1e-28</td>
+            </tr>
+            
+            <tr>
+                <td>AED90002.1</td>
+                <td>non-ribosomal_peptide_synthetase_ThaA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000443/index.html#cluster-1">BGC0000443</a></td>
+                <td>Thanamycin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>95.7009345794</td>
+                <td>124</td>
+                <td>3.6e-28</td>
+            </tr>
+            
+            <tr>
+                <td>BAH43766.1</td>
+                <td>tyrocidine_synthetase_III</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000452/index.html#cluster-1">BGC0000452</a></td>
+                <td>Tyrocidine_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>97.3831775701</td>
+                <td>123</td>
+                <td>6.1e-28</td>
+            </tr>
+            
+            <tr>
+                <td>AAF86393.1</td>
+                <td>FkbB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000994/index.html#cluster-1">BGC0000994</a></td>
+                <td>FK520_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>95.5140186916</td>
+                <td>122</td>
+                <td>1.4e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AGL76720.1</td>
+                <td>fatty_acid_CoA_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001137/index.html#cluster-1">BGC0001137</a></td>
+                <td>Marinacarboline_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>66.1682242991</td>
+                <td>122</td>
+                <td>1.4e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AOA33121.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001346/index.html#cluster-1">BGC0001346</a></td>
+                <td>Bananamides_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>97.5700934579</td>
+                <td>122</td>
+                <td>1.8e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AAC68815.1</td>
+                <td>FK506_polyketide_synthase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000353/index.html#cluster-1">BGC0000353</a></td>
+                <td>FK506_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>95.5140186916</td>
+                <td>121</td>
+                <td>2.3e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AGM16414.1</td>
+                <td>paenibacterin_synthetase_C</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000400/index.html#cluster-1">BGC0000400</a></td>
+                <td>Paenibacterin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.2056074766</td>
+                <td>121</td>
+                <td>3e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AGE26255.1</td>
+                <td>putative_non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001208/index.html#cluster-1">BGC0001208</a></td>
+                <td>Poaeamide_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>95.1401869159</td>
+                <td>121</td>
+                <td>3e-27</td>
+            </tr>
+            
+            <tr>
+                <td>CAD29799.1</td>
+                <td>microcystin_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001015/index.html#cluster-1">BGC0001015</a></td>
+                <td>Microcystin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>99.2523364486</td>
+                <td>121</td>
+                <td>4e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AAF00960.1</td>
+                <td>McyA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001017/index.html#cluster-1">BGC0001017</a></td>
+                <td>Microcystin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>95.3271028037</td>
+                <td>120</td>
+                <td>5.2e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AGE25479.1</td>
+                <td>putative_non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001208_c2/index.html#cluster-1">BGC0001208_c2</a></td>
+                <td>Poaeamide_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>96.261682243</td>
+                <td>119</td>
+                <td>1.2e-26</td>
+            </tr>
+            
+            <tr>
+                <td>ABS74209.1</td>
+                <td>FenA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001095/index.html#cluster-1">BGC0001095</a></td>
+                <td>Fengycin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>94.2056074766</td>
+                <td>118</td>
+                <td>2e-26</td>
+            </tr>
+            
+            <tr>
+                <td>CAY48788.1</td>
+                <td>putative_non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001312/index.html#cluster-1">BGC0001312</a></td>
+                <td>Viscosin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>97.3831775701</td>
+                <td>118</td>
+                <td>2.6e-26</td>
+            </tr>
+            
+            <tr>
+                <td>CCJ67640.1</td>
+                <td>TaaE</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000447/index.html#cluster-1">BGC0000447</a></td>
+                <td>Tolaasin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>94.953271028</td>
+                <td>117</td>
+                <td>4.4e-26</td>
+            </tr>
+            
+            <tr>
+                <td>ABS74180.1</td>
+                <td>BmyB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001090/index.html#cluster-1">BGC0001090</a></td>
+                <td>Bacillomycin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>92.1495327103</td>
+                <td>117</td>
+                <td>5.7e-26</td>
+            </tr>
+            
+            <tr>
+                <td>AIW82277.1</td>
+                <td>PuwA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001125/index.html#cluster-1">BGC0001125</a></td>
+                <td>Puwainaphycins_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>96.261682243</td>
+                <td>116</td>
+                <td>1.3e-25</td>
+            </tr>
+            
+            <tr>
+                <td>ABS74181.1</td>
+                <td>BmyA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001090/index.html#cluster-1">BGC0001090</a></td>
+                <td>Bacillomycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.2056074766</td>
+                <td>115</td>
+                <td>2.2e-25</td>
+            </tr>
+            
+            <tr>
+                <td>AEC14348.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000377/index.html#cluster-1">BGC0000377</a></td>
+                <td>Koranimine_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>95.7009345794</td>
+                <td>114</td>
+                <td>4.9e-25</td>
+            </tr>
+            
+            <tr>
+                <td>AAO62588.1</td>
+                <td>peptide_sythetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001016/index.html#cluster-1">BGC0001016</a></td>
+                <td>Microcystin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>98.3177570093</td>
+                <td>114</td>
+                <td>4.9e-25</td>
+            </tr>
+            
+            <tr>
+                <td>AGZ03651.1</td>
+                <td>SevB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000426/index.html#cluster-1">BGC0000426</a></td>
+                <td>Sevadicin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>93.8317757009</td>
+                <td>113</td>
+                <td>6.3e-25</td>
+            </tr>
+            
+            <tr>
+                <td>BAB69698.1</td>
+                <td>iturin_A_synthetase_A</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001098/index.html#cluster-1">BGC0001098</a></td>
+                <td>Iturin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.5794392523</td>
+                <td>112</td>
+                <td>1.4e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ABD65957.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000341/index.html#cluster-1">BGC0000341</a></td>
+                <td>Enduracidin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>94.5794392523</td>
+                <td>112</td>
+                <td>1.8e-24</td>
+            </tr>
+            
+            <tr>
+                <td>CAD91220.1</td>
+                <td>putative_non-ribosomal_peptide_synthetase,_modules_1-2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000289/index.html#cluster-1">BGC0000289</a></td>
+                <td>A40926_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>93.6448598131</td>
+                <td>111</td>
+                <td>2.4e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ABL74937.1</td>
+                <td>TlmIX</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001048/index.html#cluster-1">BGC0001048</a></td>
+                <td>Tallysomycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>97.5700934579</td>
+                <td>111</td>
+                <td>2.4e-24</td>
+            </tr>
+            
+            <tr>
+                <td>AAM80539.1</td>
+                <td>StaA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000290/index.html#cluster-1">BGC0000290</a></td>
+                <td>A47934_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>95.1401869159</td>
+                <td>111</td>
+                <td>3.1e-24</td>
+            </tr>
+            
+            <tr>
+                <td>AAF08797.1</td>
+                <td>MycC</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001103/index.html#cluster-1">BGC0001103</a></td>
+                <td>Mycosubtilin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>94.5794392523</td>
+                <td>111</td>
+                <td>3.1e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ANI24100.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001235/index.html#cluster-1">BGC0001235</a></td>
+                <td>Antalid_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>100.0</td>
+                <td>110</td>
+                <td>5.4e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ABW17376.1</td>
+                <td>PsoB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000411/index.html#cluster-1">BGC0000411</a></td>
+                <td>Putisolvin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>97.5700934579</td>
+                <td>110</td>
+                <td>5.4e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ACZ55942.1</td>
+                <td>non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000302/index.html#cluster-1">BGC0000302</a></td>
+                <td>Anabaenopeptin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.5794392523</td>
+                <td>110</td>
+                <td>5.4e-24</td>
+            </tr>
+            
+            <tr>
+                <td>CCJ67638.1</td>
+                <td>TaaC</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000447/index.html#cluster-1">BGC0000447</a></td>
+                <td>Tolaasin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>98.691588785</td>
+                <td>110</td>
+                <td>7e-24</td>
+            </tr>
+            
+            <tr>
+                <td>CCJ67637.1</td>
+                <td>TaaB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000447/index.html#cluster-1">BGC0000447</a></td>
+                <td>Tolaasin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>94.0186915888</td>
+                <td>109</td>
+                <td>1.2e-23</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ76286.1</td>
+                <td>putative_non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000972/index.html#cluster-1">BGC0000972</a></td>
+                <td>Colibactin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>94.3925233645</td>
+                <td>109</td>
+                <td>1.2e-23</td>
+            </tr>
+            
+            <tr>
+                <td>WP_052390334.1</td>
+                <td>non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001308_c2/index.html#cluster-1">BGC0001308_c2</a></td>
+                <td>Simocyclinone_D9_/_simocyclinone_D10_/_simocyclinone_D11</td>
+                <td>24</td>
+                <td>97.5700934579</td>
+                <td>109</td>
+                <td>1.6e-23</td>
+            </tr>
+            
+            <tr>
+                <td>CAM56770.1</td>
+                <td></td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000354/index.html#cluster-1">BGC0000354</a></td>
+                <td>Friulimicin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>97.3831775701</td>
+                <td>109</td>
+                <td>1.6e-23</td>
+            </tr>
+            
+            <tr>
+                <td>CAM02313.1</td>
+                <td>putative_non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000349/index.html#cluster-1">BGC0000349</a></td>
+                <td>Erythrochelin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>94.953271028</td>
+                <td>108</td>
+                <td>2.7e-23</td>
+            </tr>
+            
+            <tr>
+                <td>ABS74206.1</td>
+                <td>FenD</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001095/index.html#cluster-1">BGC0001095</a></td>
+                <td>Fengycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.2056074766</td>
+                <td>107</td>
+                <td>4.5e-23</td>
+            </tr>
+            
+            <tr>
+                <td>AAZ55899.1</td>
+                <td>amino_acid_adenylation</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000359/index.html#cluster-1">BGC0000359</a></td>
+                <td>Fuscachelin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>95.3271028037</td>
+                <td>107</td>
+                <td>4.5e-23</td>
+            </tr>
+            
+            <tr>
+                <td>CAK15815.1</td>
+                <td>putative_non_ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000344/index.html#cluster-1">BGC0000344</a></td>
+                <td>Entolysin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>96.6355140187</td>
+                <td>106</td>
+                <td>7.7e-23</td>
+            </tr>
+            
+            <tr>
+                <td>AOA33123.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001346/index.html#cluster-1">BGC0001346</a></td>
+                <td>Bananamides_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>94.7663551402</td>
+                <td>106</td>
+                <td>1e-22</td>
+            </tr>
+            
+            <tr>
+                <td>ANQ43348.1</td>
+                <td>non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001347_c2/index.html#cluster-1">BGC0001347_c2</a></td>
+                <td>Poaeamide_B_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>96.6355140187</td>
+                <td>106</td>
+                <td>1.3e-22</td>
+            </tr>
+            
+            <tr>
+                <td>AGM14933.1</td>
+                <td>xantholysin_synthetase_B</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000463/index.html#cluster-1">BGC0000463</a></td>
+                <td>Xantholysin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>95.3271028037</td>
+                <td>106</td>
+                <td>1.3e-22</td>
+            </tr>
+            
+            <tr>
+                <td>sln9</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001230/index.html#cluster-1">BGC0001230</a></td>
+                <td>Salinamides_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>98.8785046729</td>
+                <td>105</td>
+                <td>1.7e-22</td>
+            </tr>
+            
+            <tr>
+                <td>ADY76684.1</td>
+                <td>non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000950/index.html#cluster-1">BGC0000950</a></td>
+                <td>Napsamycin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>96.0747663551</td>
+                <td>104</td>
+                <td>2.9e-22</td>
+            </tr>
+            
+            <tr>
+                <td>AHF21229.1</td>
+                <td>TriE</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000449/index.html#cluster-1">BGC0000449</a></td>
+                <td>Tridecaptin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>98.1308411215</td>
+                <td>104</td>
+                <td>3.8e-22</td>
+            </tr>
+            
+            <tr>
+                <td>AAO72425.1</td>
+                <td>syringopeptin_synthetase_C</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000438/index.html#cluster-1">BGC0000438</a></td>
+                <td>Syringopeptin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>96.261682243</td>
+                <td>103</td>
+                <td>6.6e-22</td>
+            </tr>
+            
+            <tr>
+                <td>AFJ23825.1</td>
+                <td>WLIP_synthetase_B</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000462_c2/index.html#cluster-1">BGC0000462_c2</a></td>
+                <td>WLIP_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>100.186915888</td>
+                <td>103</td>
+                <td>6.6e-22</td>
+            </tr>
+            
+            <tr>
+                <td>AAY37655.1</td>
+                <td>Amino_acid_adenylation</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000437/index.html#cluster-1">BGC0000437</a></td>
+                <td>Syringomycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>96.261682243</td>
+                <td>103</td>
+                <td>8.6e-22</td>
+            </tr>
+            
+            <tr>
+                <td>KPN93063.1</td>
+                <td>NupA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001416/index.html#cluster-1">BGC0001416</a></td>
+                <td>Nunapeptin_/_nunamycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.953271028</td>
+                <td>102</td>
+                <td>1.1e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AFH75321.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000425/index.html#cluster-1">BGC0000425</a></td>
+                <td>Sessilin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>94.953271028</td>
+                <td>102</td>
+                <td>1.1e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AAZ55898.1</td>
+                <td>amino_acid_adenylation</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000359/index.html#cluster-1">BGC0000359</a></td>
+                <td>Fuscachelin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>98.691588785</td>
+                <td>102</td>
+                <td>1.5e-21</td>
+            </tr>
+            
+            <tr>
+                <td>EFE73313.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000431/index.html#cluster-1">BGC0000431</a></td>
+                <td>Stenothricin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>100.373831776</td>
+                <td>102</td>
+                <td>1.5e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AAY37654.1</td>
+                <td>Amino_acid_adenylation</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000437/index.html#cluster-1">BGC0000437</a></td>
+                <td>Syringomycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>96.4485981308</td>
+                <td>102</td>
+                <td>1.9e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AHD05678.1</td>
+                <td>nonribosomal_peptide_ligase_subunit</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000402/index.html#cluster-1">BGC0000402</a></td>
+                <td>Paenilarvins_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.3925233645</td>
+                <td>101</td>
+                <td>2.5e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AEU11003.1</td>
+                <td>NpnC</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001029/index.html#cluster-1">BGC0001029</a></td>
+                <td>Nostophycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.3925233645</td>
+                <td>101</td>
+                <td>2.5e-21</td>
+            </tr>
+            
+            <tr>
+                <td>CBF87076.1</td>
+                <td>conserved_hypothetical_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001290/index.html#cluster-1">BGC0001290</a></td>
+                <td>Emericellamide_A_/_emericellamide_B_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>68.5981308411</td>
+                <td>101</td>
+                <td>3.3e-21</td>
+            </tr>
+            
+            <tr>
+                <td>ABX37382.1</td>
+                <td>amino_acid_adenylation_domain_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000984/index.html#cluster-1">BGC0000984</a></td>
+                <td>Delftibactin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>100.373831776</td>
+                <td>101</td>
+                <td>4.3e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AHD05677.1</td>
+                <td>nonribosomal_peptide_ligase_subunit</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000402/index.html#cluster-1">BGC0000402</a></td>
+                <td>Paenilarvins_biosynthetic_gene_cluster</td>
+                <td>22</td>
+                <td>94.0186915888</td>
+                <td>100</td>
+                <td>5.6e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AHD05679.1</td>
+                <td>putative_non-ribosomal_peptide_ligase/_polyketide_synthase_hybrid</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000402/index.html#cluster-1">BGC0000402</a></td>
+                <td>Paenilarvins_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.3925233645</td>
+                <td>100</td>
+                <td>5.6e-21</td>
+            </tr>
+            
+            <tr>
+                <td>BAB69700.1</td>
+                <td>iturin_A_synthetase_C</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001098/index.html#cluster-1">BGC0001098</a></td>
+                <td>Iturin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>99.2523364486</td>
+                <td>100</td>
+                <td>7.3e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AJW65406.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001195/index.html#cluster-1">BGC0001195</a></td>
+                <td>Nocardiopsin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>100.186915888</td>
+                <td>99</td>
+                <td>9.5e-21</td>
+            </tr>
+            
+            <tr>
+                <td>EFE73312.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000431/index.html#cluster-1">BGC0000431</a></td>
+                <td>Stenothricin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>101.121495327</td>
+                <td>99</td>
+                <td>9.5e-21</td>
+            </tr>
+            
+            <tr>
+                <td>CBL93720.1</td>
+                <td>NRPS_didomain_PCP-A</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000360/index.html#cluster-1">BGC0000360</a></td>
+                <td>GE81112_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>100.186915888</td>
+                <td>99</td>
+                <td>1.2e-20</td>
+            </tr>
+            
+            <tr>
+                <td>CCJ67639.1</td>
+                <td>TaaD</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000447/index.html#cluster-1">BGC0000447</a></td>
+                <td>Tolaasin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>96.0747663551</td>
+                <td>98</td>
+                <td>2.8e-20</td>
+            </tr>
+            
+            <tr>
+                <td>ABI26079.1</td>
+                <td>OciC</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000331/index.html#cluster-1">BGC0000331</a></td>
+                <td>Cyanopeptin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>100.560747664</td>
+                <td>98</td>
+                <td>2.8e-20</td>
+            </tr>
+            
+            <tr>
+                <td>ABQ96384.2</td>
+                <td>fusaricidin_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001152/index.html#cluster-1">BGC0001152</a></td>
+                <td>Fusaricidin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>95.1401869159</td>
+                <td>98</td>
+                <td>2.8e-20</td>
+            </tr>
+            
+            <tr>
+                <td>ABI22132.1</td>
+                <td>putative_non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000422/index.html#cluster-1">BGC0000422</a></td>
+                <td>Saframycin_A_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>96.0747663551</td>
+                <td>97</td>
+                <td>6.1e-20</td>
+            </tr>
+            
+            <tr>
+                <td>AGN74885.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000459/index.html#cluster-1">BGC0000459</a></td>
+                <td>Griseoviridin_/_viridogrisein_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>94.953271028</td>
+                <td>97</td>
+                <td>6.1e-20</td>
+            </tr>
+            
+            <tr>
+                <td>AEH41793.1</td>
+                <td>HrmO</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000374/index.html#cluster-1">BGC0000374</a></td>
+                <td>Hormaomycin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>100.186915888</td>
+                <td>97</td>
+                <td>6.1e-20</td>
+            </tr>
+            
+            <tr>
+                <td>AFU82614.1</td>
+                <td>mixed_NRPS_PKS</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000998/index.html#cluster-1">BGC0000998</a></td>
+                <td>Guadinomine_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.2056074766</td>
+                <td>96</td>
+                <td>8e-20</td>
+            </tr>
+            
+            <tr>
+                <td>BAH43869.1</td>
+                <td>linear_pentadecapeptide_gramicidin_synthetase_LgrA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000367/index.html#cluster-1">BGC0000367</a></td>
+                <td>Gramicidin_biosynthetic_gene_cluster</td>
+                <td>22</td>
+                <td>94.0186915888</td>
+                <td>95</td>
+                <td>2.3e-19</td>
+            </tr>
+            
+            <tr>
+                <td>ERM18803.1</td>
+                <td>long-chain_fatty_acid--CoA_ligase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000172/index.html#cluster-1">BGC0000172</a></td>
+                <td>Basiliskamides_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>63.9252336449</td>
+                <td>94</td>
+                <td>3e-19</td>
+            </tr>
+            
+            <tr>
+                <td>AAX31558.1</td>
+                <td>peptide_synthetase_2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000336/index.html#cluster-1">BGC0000336</a></td>
+                <td>Daptomycin_biosynthetic_gene_cluster</td>
+                <td>28</td>
+                <td>69.1588785047</td>
+                <td>94</td>
+                <td>4e-19</td>
+            </tr>
+            
+            <tr>
+                <td>AAO72424.1</td>
+                <td>syringopeptin_synthetase_B</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000438/index.html#cluster-1">BGC0000438</a></td>
+                <td>Syringopeptin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>95.1401869159</td>
+                <td>94</td>
+                <td>4e-19</td>
+            </tr>
+            
+            <tr>
+                <td>CBW45648.1</td>
+                <td>PI_synthetase_2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000952/index.html#cluster-1">BGC0000952</a></td>
+                <td>Pristinamycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>99.2523364486</td>
+                <td>94</td>
+                <td>5.2e-19</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ96468.1</td>
+                <td>Non-ribosomal_peptide_synthetase_modules_and_related_proteins</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000330/index.html#cluster-1">BGC0000330</a></td>
+                <td>Cupriachelin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>97.7570093458</td>
+                <td>94</td>
+                <td>5.2e-19</td>
+            </tr>
+            
+            <tr>
+                <td>AHD05614.1</td>
+                <td>putative_non-ribosomal_peptide_ligase/_polyketide_synthase_hybrid</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001033/index.html#cluster-1">BGC0001033</a></td>
+                <td>Paenilamicin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>93.6448598131</td>
+                <td>93</td>
+                <td>6.8e-19</td>
+            </tr>
+            
+            <tr>
+                <td>AHZ20774.1</td>
+                <td>non-ribosomal_peptide_synthase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000369/index.html#cluster-1">BGC0000369</a></td>
+                <td>Hassallidins_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>99.6261682243</td>
+                <td>93</td>
+                <td>6.8e-19</td>
+            </tr>
+            
+            <tr>
+                <td>ACM68684.1</td>
+                <td>AerB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000298/index.html#cluster-1">BGC0000298</a></td>
+                <td>Aeruginosin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>96.0747663551</td>
+                <td>92</td>
+                <td>1.2e-18</td>
+            </tr>
+            
+            <tr>
+                <td>AHZ34241.1</td>
+                <td>CipD</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001389/index.html#cluster-1">BGC0001389</a></td>
+                <td>Cichopeptin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>94.5794392523</td>
+                <td>92</td>
+                <td>1.2e-18</td>
+            </tr>
+            
+            <tr>
+                <td>AAK06804.1</td>
+                <td>putative_peptide_synthase_SimD6</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001072/index.html#cluster-1">BGC0001072</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>67.8504672897</td>
+                <td>92</td>
+                <td>2e-18</td>
+            </tr>
+            
+            <tr>
+                <td>AAL15600.1</td>
+                <td>SimH</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000270/index.html#cluster-1">BGC0000270</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>67.8504672897</td>
+                <td>92</td>
+                <td>2e-18</td>
+            </tr>
+            
+            <tr>
+                <td>AAG34184.1</td>
+                <td>SimH</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000835/index.html#cluster-1">BGC0000835</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>67.8504672897</td>
+                <td>92</td>
+                <td>2e-18</td>
+            </tr>
+            
+            <tr>
+                <td>CBJ90288.1</td>
+                <td>Peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000416/index.html#cluster-1">BGC0000416</a></td>
+                <td>Rhabdopeptides_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>83.3644859813</td>
+                <td>91</td>
+                <td>2.6e-18</td>
+            </tr>
+            
+            <tr>
+                <td>AAF99707.2</td>
+                <td>syringopeptin_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000438/index.html#cluster-1">BGC0000438</a></td>
+                <td>Syringopeptin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>95.8878504673</td>
+                <td>91</td>
+                <td>3.4e-18</td>
+            </tr>
+            
+            <tr>
+                <td>CDG12864.1</td>
+                <td>non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001415/index.html#cluster-1">BGC0001415</a></td>
+                <td>Althiomycin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>96.4485981308</td>
+                <td>91</td>
+                <td>3.4e-18</td>
+            </tr>
+            
+            <tr>
+                <td>AEP18655.1</td>
+                <td>WAPS2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000461/index.html#cluster-1">BGC0000461</a></td>
+                <td>WAP-8294A2_(lotilibcin)_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>88.0373831776</td>
+                <td>90</td>
+                <td>7.5e-18</td>
+            </tr>
+            
+            <tr>
+                <td>AFK57217.1</td>
+                <td>DidF</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000985/index.html#cluster-1">BGC0000985</a></td>
+                <td>Didemnin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>103.925233645</td>
+                <td>89</td>
+                <td>9.8e-18</td>
+            </tr>
+            
+            <tr>
+                <td>AGM16412.1</td>
+                <td>paenibacterin_synthetase_A</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000400/index.html#cluster-1">BGC0000400</a></td>
+                <td>Paenibacterin_biosynthetic_gene_cluster</td>
+                <td>22</td>
+                <td>96.261682243</td>
+                <td>89</td>
+                <td>1.7e-17</td>
+            </tr>
+            
+            <tr>
+                <td>AAD44234.1</td>
+                <td>PstB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000362/index.html#cluster-1">BGC0000362</a></td>
+                <td>Glycopeptidolipid_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>95.1401869159</td>
+                <td>88</td>
+                <td>2.9e-17</td>
+            </tr>
+            
+            <tr>
+                <td>BAP05589.1</td>
+                <td>CalA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000967/index.html#cluster-1">BGC0000967</a></td>
+                <td>Calyculin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>85.046728972</td>
+                <td>87</td>
+                <td>3.7e-17</td>
+            </tr>
+            
+            <tr>
+                <td>AFH75320.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000425/index.html#cluster-1">BGC0000425</a></td>
+                <td>Sessilin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>95.5140186916</td>
+                <td>87</td>
+                <td>4.9e-17</td>
+            </tr>
+            
+            <tr>
+                <td>ABD65960.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000341/index.html#cluster-1">BGC0000341</a></td>
+                <td>Enduracidin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>95.8878504673</td>
+                <td>87</td>
+                <td>6.4e-17</td>
+            </tr>
+            
+            <tr>
+                <td>CAG29032.1</td>
+                <td>nonribosomal_peptide_synthetase_(modules_3_to_6)</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001023/index.html#cluster-1">BGC0001023</a></td>
+                <td>Myxochromide_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>77.5700934579</td>
+                <td>87</td>
+                <td>6.4e-17</td>
+            </tr>
+            
+            <tr>
+                <td>AAG02359.1</td>
+                <td>peptide_synthetase_NRPS5-4-3</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000963/index.html#cluster-1">BGC0000963</a></td>
+                <td>Bleomycin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>97.3831775701</td>
+                <td>87</td>
+                <td>6.4e-17</td>
+            </tr>
+            
+            <tr>
+                <td>AAC06347.1</td>
+                <td>bacitracin_synthetase_2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000310/index.html#cluster-1">BGC0000310</a></td>
+                <td>Bacitracin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>96.261682243</td>
+                <td>86</td>
+                <td>8.3e-17</td>
+            </tr>
+            
+            <tr>
+                <td>CAE53350.1</td>
+                <td>non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000440/index.html#cluster-1">BGC0000440</a></td>
+                <td>Teicoplanin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>93.6448598131</td>
+                <td>86</td>
+                <td>8.3e-17</td>
+            </tr>
+            
+            <tr>
+                <td>CAG15009.1</td>
+                <td>peptide_synthetase,_module_1-2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000441/index.html#cluster-1">BGC0000441</a></td>
+                <td>Teicoplanin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>93.6448598131</td>
+                <td>86</td>
+                <td>8.3e-17</td>
+            </tr>
+            
+            <tr>
+                <td>EFY94500.1</td>
+                <td>non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000337/index.html#cluster-1">BGC0000337</a></td>
+                <td>Destruxins_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>101.682242991</td>
+                <td>85</td>
+                <td>2.4e-16</td>
+            </tr>
+            
+            <tr>
+                <td>ABW17377.1</td>
+                <td>PsoC</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000411/index.html#cluster-1">BGC0000411</a></td>
+                <td>Putisolvin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>95.8878504673</td>
+                <td>84</td>
+                <td>3.2e-16</td>
+            </tr>
+            
+            <tr>
+                <td>BAJ19066.1</td>
+                <td>L-lysine_activating_non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000288/index.html#cluster-1">BGC0000288</a></td>
+                <td>A-503083_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>70.2803738318</td>
+                <td>84</td>
+                <td>3.2e-16</td>
+            </tr>
+            
+            <tr>
+                <td>AKC91857.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001414/index.html#cluster-1">BGC0001414</a></td>
+                <td>Griselimycin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>94.7663551402</td>
+                <td>84</td>
+                <td>4.1e-16</td>
+            </tr>
+            
+            <tr>
+                <td>ABW71853.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000303/index.html#cluster-1">BGC0000303</a></td>
+                <td>Anthramycin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>97.9439252336</td>
+                <td>84</td>
+                <td>5.4e-16</td>
+            </tr>
+            
+            <tr>
+                <td>WP_020635019.1</td>
+                <td>hypothetical_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001211/index.html#cluster-1">BGC0001211</a></td>
+                <td>Albachelin_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>83.5514018692</td>
+                <td>84</td>
+                <td>5.4e-16</td>
+            </tr>
+            
+            <tr>
+                <td>CCM44336.1</td>
+                <td>putative_nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001056/index.html#cluster-1">BGC0001056</a></td>
+                <td>Zeamine_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>94.0186915888</td>
+                <td>82</td>
+                <td>1.6e-15</td>
+            </tr>
+            
+            <tr>
+                <td>CCA54209.1</td>
+                <td>non-ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000893/index.html#cluster-1">BGC0000893</a></td>
+                <td>Chloramphenicol_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>96.8224299065</td>
+                <td>82</td>
+                <td>2e-15</td>
+            </tr>
+            
+            <tr>
+                <td>AHY86403.1</td>
+                <td>non_ribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000329/index.html#cluster-1">BGC0000329</a></td>
+                <td>Corpeptin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>94.5794392523</td>
+                <td>81</td>
+                <td>2.7e-15</td>
+            </tr>
+            
+            <tr>
+                <td>ACJ04424.1</td>
+                <td>aureobasidin_A1_biosynthesis_complex</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000307/index.html#cluster-1">BGC0000307</a></td>
+                <td>Aureobasidin_A1_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>100.373831776</td>
+                <td>81</td>
+                <td>3.5e-15</td>
+            </tr>
+            
+            <tr>
+                <td>ACM79812.1</td>
+                <td>ZmaQ</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001059/index.html#cluster-1">BGC0001059</a></td>
+                <td>Zwittermycin_A_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>51.214953271</td>
+                <td>79</td>
+                <td>1e-14</td>
+            </tr>
+            
+            <tr>
+                <td>AEI58865.1</td>
+                <td>peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000455/index.html#cluster-1">BGC0000455</a></td>
+                <td>Vancomycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>97.5700934579</td>
+                <td>79</td>
+                <td>1e-14</td>
+            </tr>
+            
+            <tr>
+                <td>CBK62746.1</td>
+                <td></td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001115/index.html#cluster-1">BGC0001115</a></td>
+                <td>Thiomarinol_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>70.2803738318</td>
+                <td>79</td>
+                <td>1.3e-14</td>
+            </tr>
+            
+            <tr>
+                <td>CAC48360.1</td>
+                <td>peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000311/index.html#cluster-1">BGC0000311</a></td>
+                <td>Balhimycin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>97.9439252336</td>
+                <td>78</td>
+                <td>3e-14</td>
+            </tr>
+            
+            <tr>
+                <td>ALK27914.1</td>
+                <td>non-ribosomal_peptide_synthase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001233/index.html#cluster-1">BGC0001233</a></td>
+                <td>Feglymycin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>95.7009345794</td>
+                <td>77</td>
+                <td>3.9e-14</td>
+            </tr>
+            
+            <tr>
+                <td>CAA11794.1</td>
+                <td>PCZA363.3</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000322/index.html#cluster-1">BGC0000322</a></td>
+                <td>Chloroeremomycin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>97.9439252336</td>
+                <td>77</td>
+                <td>6.6e-14</td>
+            </tr>
+            
+            <tr>
+                <td>AAZ23078.1</td>
+                <td>peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000291/index.html#cluster-1">BGC0000291</a></td>
+                <td>A54145_biosynthetic_gene_cluster</td>
+                <td>30</td>
+                <td>40.1869158879</td>
+                <td>76</td>
+                <td>1.1e-13</td>
+            </tr>
+            
+            <tr>
+                <td>EFL06865.1</td>
+                <td>hypothetical_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000300/index.html#cluster-1">BGC0000300</a></td>
+                <td>Amychelin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>66.5420560748</td>
+                <td>75</td>
+                <td>1.9e-13</td>
+            </tr>
+            
+            <tr>
+                <td>ADH04641.1</td>
+                <td>TgaC</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001051/index.html#cluster-1">BGC0001051</a></td>
+                <td>Thuggacin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>91.7757009346</td>
+                <td>75</td>
+                <td>1.9e-13</td>
+            </tr>
+            
+            <tr>
+                <td>AFK57219.1</td>
+                <td>DidH</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000985/index.html#cluster-1">BGC0000985</a></td>
+                <td>Didemnin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>68.785046729</td>
+                <td>74</td>
+                <td>4.3e-13</td>
+            </tr>
+            
+            <tr>
+                <td>ALK27915.1</td>
+                <td>non-ribosomal_peptide_synthase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001233/index.html#cluster-1">BGC0001233</a></td>
+                <td>Feglymycin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>68.0373831776</td>
+                <td>74</td>
+                <td>5.6e-13</td>
+            </tr>
+            
+            <tr>
+                <td>AGA37267.1</td>
+                <td>NRPS</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000816/index.html#cluster-1">BGC0000816</a></td>
+                <td>Malbrancheamide_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>83.3644859813</td>
+                <td>74</td>
+                <td>5.6e-13</td>
+            </tr>
+            
+            <tr>
+                <td>AMM63162.1</td>
+                <td>AniA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001371/index.html#cluster-1">BGC0001371</a></td>
+                <td>Echinocandin_B_biosynthetic_gene_cluster</td>
+                <td>22</td>
+                <td>101.308411215</td>
+                <td>73</td>
+                <td>7.3e-13</td>
+            </tr>
+            
+            <tr>
+                <td>AAG05690.1</td>
+                <td>AmbE</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000287/index.html#cluster-1">BGC0000287</a></td>
+                <td>2-amino-4-methoxy-trans-3-butenoic_acid_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>83.9252336449</td>
+                <td>72</td>
+                <td>1.2e-12</td>
+            </tr>
+            
+            <tr>
+                <td>ADH04660.1</td>
+                <td>TugD</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001342/index.html#cluster-1">BGC0001342</a></td>
+                <td>Thuggacin_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>92.8971962617</td>
+                <td>72</td>
+                <td>1.6e-12</td>
+            </tr>
+            
+            <tr>
+                <td>BAH22764.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001018/index.html#cluster-1">BGC0001018</a></td>
+                <td>Micropeptin_biosynthetic_gene_cluster</td>
+                <td>22</td>
+                <td>75.7009345794</td>
+                <td>69</td>
+                <td>1e-11</td>
+            </tr>
+            
+            <tr>
+                <td>BAH22765.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001018/index.html#cluster-1">BGC0001018</a></td>
+                <td>Micropeptin_biosynthetic_gene_cluster</td>
+                <td>22</td>
+                <td>75.7009345794</td>
+                <td>69</td>
+                <td>1e-11</td>
+            </tr>
+            
+            <tr>
+                <td>ACN39015.1</td>
+                <td>putative_nonribosomal_peptide_synthetase_TomB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000448/index.html#cluster-1">BGC0000448</a></td>
+                <td>Tomaymycin_biosynthetic_gene_cluster</td>
+                <td>25</td>
+                <td>79.4392523364</td>
+                <td>67</td>
+                <td>5.2e-11</td>
+            </tr>
+            
+            <tr>
+                <td>EAL85117.1</td>
+                <td>acetate-CoA_ligase,_putative</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001067/index.html#cluster-1">BGC0001067</a></td>
+                <td>Fumagillin_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>37.0093457944</td>
+                <td>66</td>
+                <td>8.9e-11</td>
+            </tr>
+            
+            <tr>
+                <td>AFT91378.1</td>
+                <td>EcdA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000338/index.html#cluster-1">BGC0000338</a></td>
+                <td>Echinocandin_B_biosynthetic_gene_cluster</td>
+                <td>24</td>
+                <td>74.0186915888</td>
+                <td>66</td>
+                <td>8.9e-11</td>
+            </tr>
+            
+            <tr>
+                <td>ALG65318.1</td>
+                <td>Cal18</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001297/index.html#cluster-1">BGC0001297</a></td>
+                <td>WS9326_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>31.9626168224</td>
+                <td>66</td>
+                <td>1.5e-10</td>
+            </tr>
+            
+            <tr>
+                <td>ACZ66258.1</td>
+                <td>APS1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000304/index.html#cluster-1">BGC0000304</a></td>
+                <td>Apicidin_biosynthetic_gene_cluster</td>
+                <td>22</td>
+                <td>73.8317757009</td>
+                <td>66</td>
+                <td>1.5e-10</td>
+            </tr>
+            
+            <tr>
+                <td>AGN74886.1</td>
+                <td>nonribosomal_peptide_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000459/index.html#cluster-1">BGC0000459</a></td>
+                <td>Griseoviridin_/_viridogrisein_biosynthetic_gene_cluster</td>
+                <td>30</td>
+                <td>33.8317757009</td>
+                <td>62</td>
+                <td>1.7e-09</td>
+            </tr>
+            
+            <tr>
+                <td>AAF01762.1</td>
+                <td>AM-toxin_synthetase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001261/index.html#cluster-1">BGC0001261</a></td>
+                <td>AM-toxin_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>40.0</td>
+                <td>59</td>
+                <td>1.4e-08</td>
+            </tr>
+            
+            <tr>
+                <td>AGS77307.1</td>
+                <td>NRPS_modules_1-2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001178/index.html#cluster-1">BGC0001178</a></td>
+                <td>UK-68,597_biosynthetic_gene_cluster</td>
+                <td>27</td>
+                <td>31.5887850467</td>
+                <td>57</td>
+                <td>5.4e-08</td>
+            </tr>
+            
+            <tr>
+                <td>AAN32978.1</td>
+                <td>BarD</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000962/index.html#cluster-1">BGC0000962</a></td>
+                <td>Barbamide_biosynthetic_gene_cluster</td>
+                <td>23</td>
+                <td>28.4112149533</td>
+                <td>51</td>
+                <td>3e-06</td>
+            </tr>
+            
+    </tbody>
+    </table>
+    

@@ -1,0 +1,1739 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<!-- js section -->
+<!-- jQuery  -->
+<script type="text/javascript"
+        src="../../js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" src="../../js/jquery.tmpl-1.0.0pre.js"></script>
+
+  <!-- jQuery UI Support -->
+<script type="text/javascript"
+        src="../../js/jquery-ui-1.10.4.custom.min.js"></script>
+
+ <!-- Alpaca -->
+<script type="text/javascript" src="../../js/alpaca-full-mibig.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody> 
+            <tr>
+                <td>AMK51276.1</td>
+                <td>Hex19</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001376/index.html#cluster-1">BGC0001376</a></td>
+                <td>Hexaricin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>99.1902834008</td>
+                <td>174</td>
+                <td>1.8e-43</td>
+            </tr>
+            
+            <tr>
+                <td>AEF33074.1</td>
+                <td>3-oxoacyl-[acyl-carrier_protein]_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001039/index.html#cluster-1">BGC0001039</a></td>
+                <td>Pyridomycin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>99.1902834008</td>
+                <td>161</td>
+                <td>1.2e-39</td>
+            </tr>
+            
+            <tr>
+                <td>ADB23395.1</td>
+                <td>dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001062/index.html#cluster-1">BGC0001062</a></td>
+                <td>TLN-05220_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>99.5951417004</td>
+                <td>160</td>
+                <td>2.1e-39</td>
+            </tr>
+            
+            <tr>
+                <td>AFO85456.1</td>
+                <td>reductase/oxidase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000391/index.html#cluster-1">BGC0000391</a></td>
+                <td>Methylpendolmycin/pendolmycin_biosynthetic_gene_cluster</td>
+                <td>43</td>
+                <td>99.1902834008</td>
+                <td>159</td>
+                <td>6.1e-39</td>
+            </tr>
+            
+            <tr>
+                <td>ADE22321.1</td>
+                <td>3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000279/index.html#cluster-1">BGC0000279</a></td>
+                <td>Xantholipin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>99.5951417004</td>
+                <td>157</td>
+                <td>2.3e-38</td>
+            </tr>
+            
+            <tr>
+                <td>BAJ52686.1</td>
+                <td>putative_3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000222/index.html#cluster-1">BGC0000222</a></td>
+                <td>FD-594_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>101.214574899</td>
+                <td>153</td>
+                <td>4.4e-37</td>
+            </tr>
+            
+            <tr>
+                <td>ADI71448.1</td>
+                <td>putative_oxygenase-reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000203/index.html#cluster-1">BGC0000203</a></td>
+                <td>BE-7585A_biosynthetic_gene_cluster</td>
+                <td>44</td>
+                <td>100.809716599</td>
+                <td>151</td>
+                <td>9.7e-37</td>
+            </tr>
+            
+            <tr>
+                <td>ABX71123.1</td>
+                <td>Lct40</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000238/index.html#cluster-1">BGC0000238</a></td>
+                <td>Lactonamycin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>99.1902834008</td>
+                <td>151</td>
+                <td>1.3e-36</td>
+            </tr>
+            
+            <tr>
+                <td>WP_030269276.1</td>
+                <td>short-chain_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001308/index.html#cluster-1">BGC0001308</a></td>
+                <td>Simocyclinone_D9_/_simocyclinone_D10_/_simocyclinone_D11</td>
+                <td>45</td>
+                <td>100.0</td>
+                <td>150</td>
+                <td>2.8e-36</td>
+            </tr>
+            
+            <tr>
+                <td>AHX24706.1</td>
+                <td>3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000200/index.html#cluster-1">BGC0000200</a></td>
+                <td>Arixanthomycin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>101.619433198</td>
+                <td>149</td>
+                <td>3.7e-36</td>
+            </tr>
+            
+            <tr>
+                <td>CAM34340.1</td>
+                <td>putative_3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000242/index.html#cluster-1">BGC0000242</a></td>
+                <td>Lysolipin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>101.619433198</td>
+                <td>149</td>
+                <td>6.3e-36</td>
+            </tr>
+            
+            <tr>
+                <td>AGH68923.1</td>
+                <td>oxidoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001083/index.html#cluster-1">BGC0001083</a></td>
+                <td>Merochlorin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>101.214574899</td>
+                <td>148</td>
+                <td>1.1e-35</td>
+            </tr>
+            
+            <tr>
+                <td>AAS90056.1</td>
+                <td>Ver-1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000009/index.html#cluster-1">BGC0000009</a></td>
+                <td>Aflatoxin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>102.429149798</td>
+                <td>148</td>
+                <td>1.4e-35</td>
+            </tr>
+            
+            <tr>
+                <td>ADG86325.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000190/index.html#cluster-1">BGC0000190</a></td>
+                <td>A-74528_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>102.429149798</td>
+                <td>147</td>
+                <td>1.8e-35</td>
+            </tr>
+            
+            <tr>
+                <td>WP_010639249.1</td>
+                <td>short-chain_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000958/index.html#cluster-1">BGC0000958</a></td>
+                <td>Antimycin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>100.809716599</td>
+                <td>146</td>
+                <td>3.1e-35</td>
+            </tr>
+            
+            <tr>
+                <td>ABW11827.1</td>
+                <td>short-chain_dehydrogenase/reductase_SDR</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001197/index.html#cluster-1">BGC0001197</a></td>
+                <td>Frankiamicin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>98.3805668016</td>
+                <td>146</td>
+                <td>4.1e-35</td>
+            </tr>
+            
+            <tr>
+                <td>ACI31322.1</td>
+                <td>AflM</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000011/index.html#cluster-1">BGC0000011</a></td>
+                <td>Aflatoxin/sterigmatocystin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>102.429149798</td>
+                <td>146</td>
+                <td>5.3e-35</td>
+            </tr>
+            
+            <tr>
+                <td>AAS90008.1</td>
+                <td>Ver-1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000007/index.html#cluster-1">BGC0000007</a></td>
+                <td>Aflatoxin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>102.429149798</td>
+                <td>146</td>
+                <td>5.3e-35</td>
+            </tr>
+            
+            <tr>
+                <td>AAS90030.1</td>
+                <td>Ver-1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000008/index.html#cluster-1">BGC0000008</a></td>
+                <td>Aflatoxin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>102.429149798</td>
+                <td>146</td>
+                <td>5.3e-35</td>
+            </tr>
+            
+            <tr>
+                <td>AAC49205.1</td>
+                <td>putative_ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000152/index.html#cluster-1">BGC0000152</a></td>
+                <td>Sterigmatocystin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>102.429149798</td>
+                <td>146</td>
+                <td>5.3e-35</td>
+            </tr>
+            
+            <tr>
+                <td>CAM34370.1</td>
+                <td>putative_3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000242/index.html#cluster-1">BGC0000242</a></td>
+                <td>Lysolipin_biosynthetic_gene_cluster</td>
+                <td>38</td>
+                <td>100.4048583</td>
+                <td>145</td>
+                <td>6.9e-35</td>
+            </tr>
+            
+            <tr>
+                <td>BAF85836.1</td>
+                <td>C5-ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000109/index.html#cluster-1">BGC0000109</a></td>
+                <td>Nemadectin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>105.263157895</td>
+                <td>145</td>
+                <td>6.9e-35</td>
+            </tr>
+            
+            <tr>
+                <td>BAE71323.1</td>
+                <td>reductase/dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000004/index.html#cluster-1">BGC0000004</a></td>
+                <td>Aflatoxin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>102.429149798</td>
+                <td>145</td>
+                <td>6.9e-35</td>
+            </tr>
+            
+            <tr>
+                <td>AAQ08926.1</td>
+                <td>putative_3-ketoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000224/index.html#cluster-1">BGC0000224</a></td>
+                <td>Fredericamycin_biosynthetic_gene_cluster</td>
+                <td>38</td>
+                <td>103.643724696</td>
+                <td>145</td>
+                <td>6.9e-35</td>
+            </tr>
+            
+            <tr>
+                <td>ABM21753.1</td>
+                <td>PdmG</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000256/index.html#cluster-1">BGC0000256</a></td>
+                <td>Pradimicin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>98.3805668016</td>
+                <td>145</td>
+                <td>6.9e-35</td>
+            </tr>
+            
+            <tr>
+                <td>ADB23387.1</td>
+                <td>dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001062/index.html#cluster-1">BGC0001062</a></td>
+                <td>TLN-05220_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>100.4048583</td>
+                <td>145</td>
+                <td>9.1e-35</td>
+            </tr>
+            
+            <tr>
+                <td>AAS90076.1</td>
+                <td>Ver-1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000010/index.html#cluster-1">BGC0000010</a></td>
+                <td>Aflatoxin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>102.429149798</td>
+                <td>145</td>
+                <td>9.1e-35</td>
+            </tr>
+            
+            <tr>
+                <td>AAS90099.1</td>
+                <td>Ver-1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000006/index.html#cluster-1">BGC0000006</a></td>
+                <td>Aflatoxin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>102.429149798</td>
+                <td>145</td>
+                <td>9.1e-35</td>
+            </tr>
+            
+            <tr>
+                <td>ABB52548.1</td>
+                <td>3-oxoacyl-(acyl-carrier-protein)-reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000047/index.html#cluster-1">BGC0000047</a></td>
+                <td>Dihydrochalcomycin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>100.0</td>
+                <td>144</td>
+                <td>1.2e-34</td>
+            </tr>
+            
+            <tr>
+                <td>ANC94959.1</td>
+                <td>AlmK</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001396/index.html#cluster-1">BGC0001396</a></td>
+                <td>Aldgamycin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>100.0</td>
+                <td>144</td>
+                <td>1.5e-34</td>
+            </tr>
+            
+            <tr>
+                <td>AKA54637.1</td>
+                <td>3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001216/index.html#cluster-1">BGC0001216</a></td>
+                <td>Splenocin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>100.0</td>
+                <td>144</td>
+                <td>2e-34</td>
+            </tr>
+            
+            <tr>
+                <td>AAL15586.1</td>
+                <td>Sim8</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000270/index.html#cluster-1">BGC0000270</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>43</td>
+                <td>100.0</td>
+                <td>144</td>
+                <td>2e-34</td>
+            </tr>
+            
+            <tr>
+                <td>AAK06790.1</td>
+                <td>putative_reductase_SimA9</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001072/index.html#cluster-1">BGC0001072</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>43</td>
+                <td>100.0</td>
+                <td>144</td>
+                <td>2e-34</td>
+            </tr>
+            
+            <tr>
+                <td>AAS79466.1</td>
+                <td>putative_post-PKS_ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000035/index.html#cluster-1">BGC0000035</a></td>
+                <td>Chalcomycin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>100.4048583</td>
+                <td>143</td>
+                <td>2.6e-34</td>
+            </tr>
+            
+            <tr>
+                <td>CAE53341.1</td>
+                <td>putative_short_chain_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000440/index.html#cluster-1">BGC0000440</a></td>
+                <td>Teicoplanin_biosynthetic_gene_cluster</td>
+                <td>38</td>
+                <td>96.3562753036</td>
+                <td>143</td>
+                <td>2.6e-34</td>
+            </tr>
+            
+            <tr>
+                <td>CAG15000.1</td>
+                <td>short_chain_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000441/index.html#cluster-1">BGC0000441</a></td>
+                <td>Teicoplanin_biosynthetic_gene_cluster</td>
+                <td>38</td>
+                <td>96.3562753036</td>
+                <td>143</td>
+                <td>2.6e-34</td>
+            </tr>
+            
+            <tr>
+                <td>AAM33685.1</td>
+                <td>putative_bifunctional_cyclase/3-oxoacyl-ACP_reductase_GrhT</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000230/index.html#cluster-1">BGC0000230</a></td>
+                <td>Griseorhodin_biosynthetic_gene_cluster</td>
+                <td>40</td>
+                <td>99.1902834008</td>
+                <td>140</td>
+                <td>2.9e-33</td>
+            </tr>
+            
+            <tr>
+                <td>ACP19359.1</td>
+                <td>SaqN</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000267/index.html#cluster-1">BGC0000267</a></td>
+                <td>Saquayamycin_Z_/_galtamycin_B_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>100.0</td>
+                <td>139</td>
+                <td>3.8e-33</td>
+            </tr>
+            
+            <tr>
+                <td>AJI44188.1</td>
+                <td>hypothetical_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001193/index.html#cluster-1">BGC0001193</a></td>
+                <td>Thiolutin_biosynthetic_gene_cluster</td>
+                <td>38</td>
+                <td>100.0</td>
+                <td>138</td>
+                <td>8.5e-33</td>
+            </tr>
+            
+            <tr>
+                <td>WP_029025960.1</td>
+                <td>short-chain_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000198/index.html#cluster-1">BGC0000198</a></td>
+                <td>Arenimycin_B_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>100.809716599</td>
+                <td>138</td>
+                <td>8.5e-33</td>
+            </tr>
+            
+            <tr>
+                <td>AAM33668.1</td>
+                <td>putative_3-oxoacyl-ACP_reductase_GrhO10</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000230/index.html#cluster-1">BGC0000230</a></td>
+                <td>Griseorhodin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>102.429149798</td>
+                <td>138</td>
+                <td>1.4e-32</td>
+            </tr>
+            
+            <tr>
+                <td>AHX24712.1</td>
+                <td>3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000200/index.html#cluster-1">BGC0000200</a></td>
+                <td>Arixanthomycin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>98.7854251012</td>
+                <td>137</td>
+                <td>1.9e-32</td>
+            </tr>
+            
+            <tr>
+                <td>BAV17004.1</td>
+                <td>putative_oxygenase-reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001384/index.html#cluster-1">BGC0001384</a></td>
+                <td>Saprolmycin_biosynthetic_gene_cluster</td>
+                <td>43</td>
+                <td>100.0</td>
+                <td>136</td>
+                <td>3.2e-32</td>
+            </tr>
+            
+            <tr>
+                <td>AGN74904.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000459/index.html#cluster-1">BGC0000459</a></td>
+                <td>Griseoviridin_/_viridogrisein_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>102.834008097</td>
+                <td>136</td>
+                <td>4.2e-32</td>
+            </tr>
+            
+            <tr>
+                <td>BAJ52708.1</td>
+                <td>putative_3-ketoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000222/index.html#cluster-1">BGC0000222</a></td>
+                <td>FD-594_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>100.4048583</td>
+                <td>136</td>
+                <td>5.5e-32</td>
+            </tr>
+            
+            <tr>
+                <td>AGO50615.1</td>
+                <td>oxygenase-reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000229/index.html#cluster-1">BGC0000229</a></td>
+                <td>Grincamycin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>100.0</td>
+                <td>134</td>
+                <td>2.1e-31</td>
+            </tr>
+            
+            <tr>
+                <td>AAD13552.1</td>
+                <td>reductase_homolog</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000239/index.html#cluster-1">BGC0000239</a></td>
+                <td>Landomycin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>100.4048583</td>
+                <td>134</td>
+                <td>2.1e-31</td>
+            </tr>
+            
+            <tr>
+                <td>WP_030267262.1</td>
+                <td>3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001308_c2/index.html#cluster-1">BGC0001308_c2</a></td>
+                <td>Simocyclinone_D9_/_simocyclinone_D10_/_simocyclinone_D11</td>
+                <td>38</td>
+                <td>99.1902834008</td>
+                <td>131</td>
+                <td>1.4e-30</td>
+            </tr>
+            
+            <tr>
+                <td>CAH10112.1</td>
+                <td>putative_oxidase-reducatse</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000268/index.html#cluster-1">BGC0000268</a></td>
+                <td>Sch47554_/_Sch47555_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>100.0</td>
+                <td>131</td>
+                <td>1.8e-30</td>
+            </tr>
+            
+            <tr>
+                <td>ADE22311.1</td>
+                <td>putative_3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000279/index.html#cluster-1">BGC0000279</a></td>
+                <td>Xantholipin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>101.619433198</td>
+                <td>129</td>
+                <td>3.9e-30</td>
+            </tr>
+            
+            <tr>
+                <td>CAM58804.1</td>
+                <td>BenL_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000204/index.html#cluster-1">BGC0000204</a></td>
+                <td>Benastatin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>103.238866397</td>
+                <td>129</td>
+                <td>3.9e-30</td>
+            </tr>
+            
+            <tr>
+                <td>AAF00206.1</td>
+                <td>oxygenase-reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000276_c2/index.html#cluster-1">BGC0000276_c2</a></td>
+                <td>Urdamycin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>99.5951417004</td>
+                <td>128</td>
+                <td>1.1e-29</td>
+            </tr>
+            
+            <tr>
+                <td>AEG64681.1</td>
+                <td>2-deoxy-D-gluconate_3-dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000379/index.html#cluster-1">BGC0000379</a></td>
+                <td>Laspartomycin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>102.429149798</td>
+                <td>127</td>
+                <td>2e-29</td>
+            </tr>
+            
+            <tr>
+                <td>ACU71635.1</td>
+                <td>short-chain_dehydrogenase/reductase_SDR</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001154/index.html#cluster-1">BGC0001154</a></td>
+                <td>Cacibiocin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>102.024291498</td>
+                <td>127</td>
+                <td>2e-29</td>
+            </tr>
+            
+            <tr>
+                <td>AHL46681.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001177/index.html#cluster-1">BGC0001177</a></td>
+                <td>Mensacaricin_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>99.5951417004</td>
+                <td>127</td>
+                <td>2.6e-29</td>
+            </tr>
+            
+            <tr>
+                <td>ADB02849.1</td>
+                <td>AzicF</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000202/index.html#cluster-1">BGC0000202</a></td>
+                <td>Azicemicin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>98.3805668016</td>
+                <td>127</td>
+                <td>2.6e-29</td>
+            </tr>
+            
+            <tr>
+                <td>AAY93361.1</td>
+                <td>glucose_1-dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000413/index.html#cluster-1">BGC0000413</a></td>
+                <td>Pyoverdine_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>104.453441296</td>
+                <td>126</td>
+                <td>3.3e-29</td>
+            </tr>
+            
+            <tr>
+                <td>EHM27510.1</td>
+                <td>monooxygenase_FAD-binding</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000235/index.html#cluster-1">BGC0000235</a></td>
+                <td>Kiamycin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>100.809716599</td>
+                <td>126</td>
+                <td>4.4e-29</td>
+            </tr>
+            
+            <tr>
+                <td>AAM33669.1</td>
+                <td>putative_3-oxoacyl-ACP_reductase_GrhO2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000230/index.html#cluster-1">BGC0000230</a></td>
+                <td>Griseorhodin_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>104.453441296</td>
+                <td>124</td>
+                <td>1.7e-28</td>
+            </tr>
+            
+            <tr>
+                <td>AAG03071.1</td>
+                <td>putative_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000266/index.html#cluster-1">BGC0000266</a></td>
+                <td>Rubromycin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>102.429149798</td>
+                <td>124</td>
+                <td>1.7e-28</td>
+            </tr>
+            
+            <tr>
+                <td>CAI94720.1</td>
+                <td>putative_oxyacyl-(acyl_carrier_protein)_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000141/index.html#cluster-1">BGC0000141</a></td>
+                <td>Rubradirin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>99.1902834008</td>
+                <td>124</td>
+                <td>2.2e-28</td>
+            </tr>
+            
+            <tr>
+                <td>AEI70241.1</td>
+                <td>2,3-dihydro-2,3-dihydroxybenzoate_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000401/index.html#cluster-1">BGC0000401</a></td>
+                <td>Paenibactin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>104.048582996</td>
+                <td>124</td>
+                <td>2.2e-28</td>
+            </tr>
+            
+            <tr>
+                <td>ADG86311.1</td>
+                <td>3-ketoacyl_ACP-reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000190/index.html#cluster-1">BGC0000190</a></td>
+                <td>A-74528_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>98.3805668016</td>
+                <td>123</td>
+                <td>3.7e-28</td>
+            </tr>
+            
+            <tr>
+                <td>BAJ07846.1</td>
+                <td>putative_oxygenase-reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000232/index.html#cluster-1">BGC0000232</a></td>
+                <td>Hatomarubigin_biosynthetic_gene_cluster</td>
+                <td>41</td>
+                <td>100.809716599</td>
+                <td>121</td>
+                <td>1.1e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AAG34187.1</td>
+                <td>SimJ1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000835/index.html#cluster-1">BGC0000835</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>99.1902834008</td>
+                <td>121</td>
+                <td>1.8e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AAL15603.1</td>
+                <td>SimJ1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000270/index.html#cluster-1">BGC0000270</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>99.1902834008</td>
+                <td>121</td>
+                <td>1.8e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AAK06807.1</td>
+                <td>putative_3-keto-acyl-reductase_SimD2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001072/index.html#cluster-1">BGC0001072</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>99.1902834008</td>
+                <td>121</td>
+                <td>1.8e-27</td>
+            </tr>
+            
+            <tr>
+                <td>AFV52172.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000081/index.html#cluster-1">BGC0000081</a></td>
+                <td>Kedarcidin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>97.1659919028</td>
+                <td>119</td>
+                <td>4.1e-27</td>
+            </tr>
+            
+            <tr>
+                <td>ADI58630.1</td>
+                <td>AsuB3</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000187/index.html#cluster-1">BGC0000187</a></td>
+                <td>Asukamycin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>97.5708502024</td>
+                <td>119</td>
+                <td>4.1e-27</td>
+            </tr>
+            
+            <tr>
+                <td>CAD62198.1</td>
+                <td>Ata4_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000873/index.html#cluster-1">BGC0000873</a></td>
+                <td>A201A_biosynthetic_gene_cluster</td>
+                <td>38</td>
+                <td>98.3805668016</td>
+                <td>119</td>
+                <td>7e-27</td>
+            </tr>
+            
+            <tr>
+                <td>CAM34373.1</td>
+                <td>putative_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000242/index.html#cluster-1">BGC0000242</a></td>
+                <td>Lysolipin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>104.453441296</td>
+                <td>119</td>
+                <td>7e-27</td>
+            </tr>
+            
+            <tr>
+                <td>CAE17551.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000210/index.html#cluster-1">BGC0000210</a></td>
+                <td>Chromomycin_A3_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>103.238866397</td>
+                <td>118</td>
+                <td>9.1e-27</td>
+            </tr>
+            
+            <tr>
+                <td>EDY47129.1</td>
+                <td>conserved_hypothetical_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000845/index.html#cluster-1">BGC0000845</a></td>
+                <td>Clavulanic_acid_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>90.2834008097</td>
+                <td>118</td>
+                <td>1.2e-26</td>
+            </tr>
+            
+            <tr>
+                <td>CAG23976.1</td>
+                <td>3-oxoacyl-(acyl_carrier_protein)_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000176/index.html#cluster-1">BGC0000176</a></td>
+                <td>Difficidin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>98.3805668016</td>
+                <td>116</td>
+                <td>4.5e-26</td>
+            </tr>
+            
+            <tr>
+                <td>AHL46721.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001179/index.html#cluster-1">BGC0001179</a></td>
+                <td>Rishirilide_B_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>100.4048583</td>
+                <td>116</td>
+                <td>4.5e-26</td>
+            </tr>
+            
+            <tr>
+                <td>ADE34504.1</td>
+                <td>SsfK</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000269/index.html#cluster-1">BGC0000269</a></td>
+                <td>SF2575_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>99.5951417004</td>
+                <td>114</td>
+                <td>1.3e-25</td>
+            </tr>
+            
+            <tr>
+                <td>AHH25583.1</td>
+                <td>1-cyclohexenylcarbonyl_CoA_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000957/index.html#cluster-1">BGC0000957</a></td>
+                <td>Ansatrienin_(mycotrienin)_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>97.975708502</td>
+                <td>114</td>
+                <td>1.7e-25</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ34364.1</td>
+                <td>NAD_or_NADP_oxidoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000445/index.html#cluster-1">BGC0000445</a></td>
+                <td>Thiocoraline_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>100.809716599</td>
+                <td>113</td>
+                <td>5e-25</td>
+            </tr>
+            
+            <tr>
+                <td>AAQ84160.1</td>
+                <td>ChcA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000123/index.html#cluster-1">BGC0000123</a></td>
+                <td>Phoslactomycin_B_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>98.7854251012</td>
+                <td>112</td>
+                <td>6.5e-25</td>
+            </tr>
+            
+            <tr>
+                <td>ALV82450.1</td>
+                <td>putative_3-oxoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001382/index.html#cluster-1">BGC0001382</a></td>
+                <td>Svaricin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>98.7854251012</td>
+                <td>112</td>
+                <td>6.5e-25</td>
+            </tr>
+            
+            <tr>
+                <td>ACO31265.1</td>
+                <td>Ptm01</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001140/index.html#cluster-1">BGC0001140</a></td>
+                <td>Platensimycin_/_platencin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>100.4048583</td>
+                <td>112</td>
+                <td>8.5e-25</td>
+            </tr>
+            
+            <tr>
+                <td>ABL09970.1</td>
+                <td>oxidoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000197/index.html#cluster-1">BGC0000197</a></td>
+                <td>Aranciamycin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>100.4048583</td>
+                <td>111</td>
+                <td>1.1e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ANY57964.1</td>
+                <td>MtcE_3-ketoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001369/index.html#cluster-1">BGC0001369</a></td>
+                <td>Metatricycloene_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>101.214574899</td>
+                <td>111</td>
+                <td>1.5e-24</td>
+            </tr>
+            
+            <tr>
+                <td>AIL50168.1</td>
+                <td>putative_ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000213/index.html#cluster-1">BGC0000213</a></td>
+                <td>Colabomycin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>98.7854251012</td>
+                <td>110</td>
+                <td>3.2e-24</td>
+            </tr>
+            
+            <tr>
+                <td>AAQ08912.1</td>
+                <td>putative_3-ketoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000224/index.html#cluster-1">BGC0000224</a></td>
+                <td>Fredericamycin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>98.3805668016</td>
+                <td>110</td>
+                <td>3.2e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ADD83002.1</td>
+                <td>PtnO1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001156/index.html#cluster-1">BGC0001156</a></td>
+                <td>Platencin_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>100.4048583</td>
+                <td>110</td>
+                <td>3.2e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ACN64844.1</td>
+                <td>PokT1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001061/index.html#cluster-1">BGC0001061</a></td>
+                <td>Polyketomycin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>97.975708502</td>
+                <td>109</td>
+                <td>4.2e-24</td>
+            </tr>
+            
+            <tr>
+                <td>AAD32718.1</td>
+                <td>MitF</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000915/index.html#cluster-1">BGC0000915</a></td>
+                <td>Mitomycin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>97.5708502024</td>
+                <td>109</td>
+                <td>4.2e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ANY57970.1</td>
+                <td>Short_chain_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001369/index.html#cluster-1">BGC0001369</a></td>
+                <td>Metatricycloene_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>101.214574899</td>
+                <td>109</td>
+                <td>4.2e-24</td>
+            </tr>
+            
+            <tr>
+                <td>CAQ64702.1</td>
+                <td>probable_glucose_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000087/index.html#cluster-1">BGC0000087</a></td>
+                <td>Lasalocid_biosynthetic_gene_cluster</td>
+                <td>37</td>
+                <td>100.0</td>
+                <td>109</td>
+                <td>7.2e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ADD83006.1</td>
+                <td>PtnO8</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001156/index.html#cluster-1">BGC0001156</a></td>
+                <td>Platencin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>103.238866397</td>
+                <td>109</td>
+                <td>7.2e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ACO31295.1</td>
+                <td>PtmO8</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001140/index.html#cluster-1">BGC0001140</a></td>
+                <td>Platensimycin_/_platencin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>104.453441296</td>
+                <td>108</td>
+                <td>9.4e-24</td>
+            </tr>
+            
+            <tr>
+                <td>ABD29269.1</td>
+                <td>3-ketoacyl-acyl_carrier_protein_reductase,_putative</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000943/index.html#cluster-1">BGC0000943</a></td>
+                <td>Staphylobactin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>102.429149798</td>
+                <td>108</td>
+                <td>1.6e-23</td>
+            </tr>
+            
+            <tr>
+                <td>AME18007.1</td>
+                <td>oxidoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001378/index.html#cluster-1">BGC0001378</a></td>
+                <td>Tiancimycin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>77.7327935223</td>
+                <td>107</td>
+                <td>2.1e-23</td>
+            </tr>
+            
+            <tr>
+                <td>CBK62720.1</td>
+                <td></td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001115/index.html#cluster-1">BGC0001115</a></td>
+                <td>Thiomarinol_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>96.3562753036</td>
+                <td>107</td>
+                <td>2.1e-23</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ42322.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000273/index.html#cluster-1">BGC0000273</a></td>
+                <td>Steffimycin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>98.3805668016</td>
+                <td>106</td>
+                <td>3.6e-23</td>
+            </tr>
+            
+            <tr>
+                <td>ABS75236.1</td>
+                <td>DhbA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001185/index.html#cluster-1">BGC0001185</a></td>
+                <td>Bacillibactin_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>102.429149798</td>
+                <td>106</td>
+                <td>4.7e-23</td>
+            </tr>
+            
+            <tr>
+                <td>ACM68692.1</td>
+                <td>putative_oxidoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000298/index.html#cluster-1">BGC0000298</a></td>
+                <td>Aeruginosin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>102.834008097</td>
+                <td>105</td>
+                <td>8e-23</td>
+            </tr>
+            
+            <tr>
+                <td>ANW12115.1</td>
+                <td>putative_dehydrogenase/reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001374/index.html#cluster-1">BGC0001374</a></td>
+                <td>Thienodolin_biosynthetic_gene_cluster</td>
+                <td>38</td>
+                <td>76.9230769231</td>
+                <td>104</td>
+                <td>1.4e-22</td>
+            </tr>
+            
+            <tr>
+                <td>AKD43505.1</td>
+                <td>Ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001409/index.html#cluster-1">BGC0001409</a></td>
+                <td>Dutomycin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>97.975708502</td>
+                <td>104</td>
+                <td>1.4e-22</td>
+            </tr>
+            
+            <tr>
+                <td>AAA65202.1</td>
+                <td>daunorubicin-doxorubicin_polyketide_synthase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000218/index.html#cluster-1">BGC0000218</a></td>
+                <td>Doxorubicin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>101.619433198</td>
+                <td>104</td>
+                <td>1.8e-22</td>
+            </tr>
+            
+            <tr>
+                <td>ANY57882.1</td>
+                <td>PenD</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001372/index.html#cluster-1">BGC0001372</a></td>
+                <td>Penigequinolone_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>104.048582996</td>
+                <td>101</td>
+                <td>1.2e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AKD43498.1</td>
+                <td>3-Ketoacyl-(acyl-carrier-protein)_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001409/index.html#cluster-1">BGC0001409</a></td>
+                <td>Dutomycin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>98.7854251012</td>
+                <td>101</td>
+                <td>1.2e-21</td>
+            </tr>
+            
+            <tr>
+                <td>ACO31293.1</td>
+                <td>PtmO7</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001140/index.html#cluster-1">BGC0001140</a></td>
+                <td>Platensimycin_/_platencin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>102.429149798</td>
+                <td>101</td>
+                <td>2e-21</td>
+            </tr>
+            
+            <tr>
+                <td>ACN64852.1</td>
+                <td>PokT2</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001061/index.html#cluster-1">BGC0001061</a></td>
+                <td>Polyketomycin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>99.1902834008</td>
+                <td>101</td>
+                <td>2e-21</td>
+            </tr>
+            
+            <tr>
+                <td>CAA07765.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000246/index.html#cluster-1">BGC0000246</a></td>
+                <td>Mithramycin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>98.3805668016</td>
+                <td>99</td>
+                <td>5.7e-21</td>
+            </tr>
+            
+            <tr>
+                <td>CAK50780.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000247/index.html#cluster-1">BGC0000247</a></td>
+                <td>Mithramycin_biosynthetic_gene_cluster</td>
+                <td>35</td>
+                <td>98.3805668016</td>
+                <td>99</td>
+                <td>5.7e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AFO59869.1</td>
+                <td>ChxH</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000175/index.html#cluster-1">BGC0000175</a></td>
+                <td>Cycloheximide_/_actiphenol_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>103.643724696</td>
+                <td>99</td>
+                <td>5.7e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AIL50182.1</td>
+                <td>putative_ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000213/index.html#cluster-1">BGC0000213</a></td>
+                <td>Colabomycin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>97.5708502024</td>
+                <td>99</td>
+                <td>7.5e-21</td>
+            </tr>
+            
+            <tr>
+                <td>AAM12932.1</td>
+                <td>MupS</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000182/index.html#cluster-1">BGC0000182</a></td>
+                <td>Mupirocin_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>95.951417004</td>
+                <td>97</td>
+                <td>1.7e-20</td>
+            </tr>
+            
+            <tr>
+                <td>ADD83005.1</td>
+                <td>PtnO7</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001156/index.html#cluster-1">BGC0001156</a></td>
+                <td>Platencin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>102.429149798</td>
+                <td>97</td>
+                <td>1.7e-20</td>
+            </tr>
+            
+            <tr>
+                <td>ABI75134.1</td>
+                <td>short-chain_alcohol_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000887/index.html#cluster-1">BGC0000887</a></td>
+                <td>AWQC131C_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>92.3076923077</td>
+                <td>97</td>
+                <td>2.2e-20</td>
+            </tr>
+            
+            <tr>
+                <td>CBA63665.1</td>
+                <td>2,3-dihydro-2,3-dihydroxybenzoate_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000368/index.html#cluster-1">BGC0000368</a></td>
+                <td>Griseobactin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>106.882591093</td>
+                <td>97</td>
+                <td>2.2e-20</td>
+            </tr>
+            
+            <tr>
+                <td>ABD65959.1</td>
+                <td>acyl-CoA_dehydrogenase/reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000341/index.html#cluster-1">BGC0000341</a></td>
+                <td>Enduracidin_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>110.12145749</td>
+                <td>97</td>
+                <td>2.8e-20</td>
+            </tr>
+            
+            <tr>
+                <td>BAK64641.1</td>
+                <td>dihydroxy_ketone_synthase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000135/index.html#cluster-1">BGC0000135</a></td>
+                <td>Reveromycin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>107.287449393</td>
+                <td>97</td>
+                <td>2.8e-20</td>
+            </tr>
+            
+            <tr>
+                <td>ABI75108.1</td>
+                <td>short-chain_alcohol_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000928/index.html#cluster-1">BGC0000928</a></td>
+                <td>T3_toxin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>91.0931174089</td>
+                <td>96</td>
+                <td>4.8e-20</td>
+            </tr>
+            
+            <tr>
+                <td>EDY42534.1</td>
+                <td>monensin_polyketide_synthase_ketoacyl_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000212/index.html#cluster-1">BGC0000212</a></td>
+                <td>Cinerubin_B_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>102.024291498</td>
+                <td>96</td>
+                <td>6.3e-20</td>
+            </tr>
+            
+            <tr>
+                <td>ADI58639.1</td>
+                <td>AsuC7</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000187/index.html#cluster-1">BGC0000187</a></td>
+                <td>Asukamycin_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>97.5708502024</td>
+                <td>96</td>
+                <td>6.3e-20</td>
+            </tr>
+            
+            <tr>
+                <td>CAH10175.1</td>
+                <td>ChaZ_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000207/index.html#cluster-1">BGC0000207</a></td>
+                <td>Chartreusin_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>102.429149798</td>
+                <td>95</td>
+                <td>8.2e-20</td>
+            </tr>
+            
+            <tr>
+                <td>AHN91930.1</td>
+                <td>short-chain_dehydrogenase/reductase_SDR</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000340/index.html#cluster-1">BGC0000340</a></td>
+                <td>Echosides_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>98.7854251012</td>
+                <td>95</td>
+                <td>1.1e-19</td>
+            </tr>
+            
+            <tr>
+                <td>CAD18969.1</td>
+                <td>putative_oxidoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000847/index.html#cluster-1">BGC0000847</a></td>
+                <td>Thienamycin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>107.287449393</td>
+                <td>94</td>
+                <td>1.4e-19</td>
+            </tr>
+            
+            <tr>
+                <td>ACI88864.1</td>
+                <td>AlnP_ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000195/index.html#cluster-1">BGC0000195</a></td>
+                <td>Alnumycin_biosynthetic_gene_cluster</td>
+                <td>30</td>
+                <td>105.263157895</td>
+                <td>94</td>
+                <td>1.8e-19</td>
+            </tr>
+            
+            <tr>
+                <td>ACH85578.1</td>
+                <td>CetF1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000283/index.html#cluster-1">BGC0000283</a></td>
+                <td>Cetoniacytone_A_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>107.287449393</td>
+                <td>93</td>
+                <td>3.1e-19</td>
+            </tr>
+            
+            <tr>
+                <td>EWM63056.1</td>
+                <td>2,3-dihydro-2,3-dihydroxybenzoate_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000679/index.html#cluster-1">BGC0000679</a></td>
+                <td>Diazepinomicin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>104.453441296</td>
+                <td>91</td>
+                <td>1.2e-18</td>
+            </tr>
+            
+            <tr>
+                <td>BAF98625.1</td>
+                <td>putative_2,3-dihydro-2,3-dihydroxy_benzoate_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000651/index.html#cluster-1">BGC0000651</a></td>
+                <td>KS-505a_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>100.809716599</td>
+                <td>90</td>
+                <td>2.7e-18</td>
+            </tr>
+            
+            <tr>
+                <td>KDN80075.1</td>
+                <td>3-ketoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001074/index.html#cluster-1">BGC0001074</a></td>
+                <td>Cosmomycin_D_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>92.7125506073</td>
+                <td>88</td>
+                <td>1e-17</td>
+            </tr>
+            
+            <tr>
+                <td>AAD37452.1</td>
+                <td>putative_ketoacyl_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000252/index.html#cluster-1">BGC0000252</a></td>
+                <td>Nonactin_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>100.809716599</td>
+                <td>88</td>
+                <td>1e-17</td>
+            </tr>
+            
+            <tr>
+                <td>AMEG_HIPS_SALB_00476</td>
+                <td>Ketoacyl-(acyl-carrier-protein)_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001150/index.html#cluster-1">BGC0001150</a></td>
+                <td>Pamamycin_biosynthetic_gene_cluster</td>
+                <td>30</td>
+                <td>98.3805668016</td>
+                <td>88</td>
+                <td>1.3e-17</td>
+            </tr>
+            
+            <tr>
+                <td>BAR73014.1</td>
+                <td>putative_3-ketoacyl-ACP_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001194/index.html#cluster-1">BGC0001194</a></td>
+                <td>Hitachimycin_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>111.336032389</td>
+                <td>87</td>
+                <td>1.7e-17</td>
+            </tr>
+            
+            <tr>
+                <td>AAZ78336.1</td>
+                <td>OxyM</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000254/index.html#cluster-1">BGC0000254</a></td>
+                <td>Oxytetracycline_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>97.975708502</td>
+                <td>86</td>
+                <td>3.8e-17</td>
+            </tr>
+            
+            <tr>
+                <td>ALG65315.1</td>
+                <td>Cal21</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001297/index.html#cluster-1">BGC0001297</a></td>
+                <td>WS9326_biosynthetic_gene_cluster</td>
+                <td>30</td>
+                <td>109.71659919</td>
+                <td>86</td>
+                <td>5e-17</td>
+            </tr>
+            
+            <tr>
+                <td>AHL46696.1</td>
+                <td>ketoreductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001177/index.html#cluster-1">BGC0001177</a></td>
+                <td>Mensacaricin_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>109.311740891</td>
+                <td>86</td>
+                <td>5e-17</td>
+            </tr>
+            
+            <tr>
+                <td>ABP53501.1</td>
+                <td>short-chain_dehydrogenase/reductase_SDR</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001041/index.html#cluster-1">BGC0001041</a></td>
+                <td>Salinosporamide_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>100.0</td>
+                <td>86</td>
+                <td>6.5e-17</td>
+            </tr>
+            
+            <tr>
+                <td>ABP73642.1</td>
+                <td>SalM</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000145/index.html#cluster-1">BGC0000145</a></td>
+                <td>Salinosporamide_A_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>100.0</td>
+                <td>86</td>
+                <td>6.5e-17</td>
+            </tr>
+            
+            <tr>
+                <td>CAA60458.1</td>
+                <td>ketoreductase/dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001040/index.html#cluster-1">BGC0001040</a></td>
+                <td>Rapamycin_biosynthetic_gene_cluster</td>
+                <td>30</td>
+                <td>103.643724696</td>
+                <td>85</td>
+                <td>1.1e-16</td>
+            </tr>
+            
+            <tr>
+                <td>AAF70104.1</td>
+                <td>AknA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000192/index.html#cluster-1">BGC0000192</a></td>
+                <td>Aclacinomycin_biosynthetic_gene_cluster</td>
+                <td>31</td>
+                <td>103.238866397</td>
+                <td>84</td>
+                <td>1.5e-16</td>
+            </tr>
+            
+            <tr>
+                <td>BAB72043.1</td>
+                <td>AknA</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000191/index.html#cluster-1">BGC0000191</a></td>
+                <td>Aclacinomycin_biosynthetic_gene_cluster</td>
+                <td>29</td>
+                <td>102.024291498</td>
+                <td>84</td>
+                <td>1.5e-16</td>
+            </tr>
+            
+            <tr>
+                <td>ABY83162.1</td>
+                <td>Azi24</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000960/index.html#cluster-1">BGC0000960</a></td>
+                <td>Azinomycin_B_biosynthetic_gene_cluster</td>
+                <td>28</td>
+                <td>109.71659919</td>
+                <td>84</td>
+                <td>1.5e-16</td>
+            </tr>
+            
+            <tr>
+                <td>BAO66523.1</td>
+                <td>carveol_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000042/index.html#cluster-1">BGC0000042</a></td>
+                <td>Cremimycin_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>110.526315789</td>
+                <td>82</td>
+                <td>5.5e-16</td>
+            </tr>
+            
+            <tr>
+                <td>AHZ20771.1</td>
+                <td>3-oxoacyl-acyl-carrier-protein_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000369/index.html#cluster-1">BGC0000369</a></td>
+                <td>Hassallidins_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>101.619433198</td>
+                <td>82</td>
+                <td>7.2e-16</td>
+            </tr>
+            
+            <tr>
+                <td>ACA34721.1</td>
+                <td>CtnE</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000894/index.html#cluster-1">BGC0000894</a></td>
+                <td>Citrinin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>81.7813765182</td>
+                <td>80</td>
+                <td>2.7e-15</td>
+            </tr>
+            
+            <tr>
+                <td>CAA34367.1</td>
+                <td></td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000228/index.html#cluster-1">BGC0000228</a></td>
+                <td>Granaticin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>100.4048583</td>
+                <td>79</td>
+                <td>8e-15</td>
+            </tr>
+            
+            <tr>
+                <td>CAA09651.1</td>
+                <td></td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000227/index.html#cluster-1">BGC0000227</a></td>
+                <td>Granaticin_biosynthetic_gene_cluster</td>
+                <td>34</td>
+                <td>100.4048583</td>
+                <td>79</td>
+                <td>8e-15</td>
+            </tr>
+            
+            <tr>
+                <td>AMEG_HIPS_SALB_00473</td>
+                <td>Ketoacyl-(acyl-carrier-protein)_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001150/index.html#cluster-1">BGC0001150</a></td>
+                <td>Pamamycin_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>105.668016194</td>
+                <td>77</td>
+                <td>2.3e-14</td>
+            </tr>
+            
+            <tr>
+                <td>ABC42563.1</td>
+                <td>putative_short_chain_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000698/index.html#cluster-1">BGC0000698</a></td>
+                <td>Hygromycin_A_biosynthetic_gene_cluster</td>
+                <td>30</td>
+                <td>106.882591093</td>
+                <td>76</td>
+                <td>4e-14</td>
+            </tr>
+            
+            <tr>
+                <td>BAC70704.1</td>
+                <td>1-deoxy-11beta-hydroxypentalenic_acid_dehydrogenase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000678/index.html#cluster-1">BGC0000678</a></td>
+                <td>Pentalenolactone_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>76.1133603239</td>
+                <td>74</td>
+                <td>1.5e-13</td>
+            </tr>
+            
+            <tr>
+                <td>AHX24689.1</td>
+                <td>short-chain_dehydrogenase/reductase_SDR</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000200/index.html#cluster-1">BGC0000200</a></td>
+                <td>Arixanthomycin_biosynthetic_gene_cluster</td>
+                <td>32</td>
+                <td>96.3562753036</td>
+                <td>69</td>
+                <td>8.3e-12</td>
+            </tr>
+            
+            <tr>
+                <td>CAM34348.1</td>
+                <td>putative_short-chain_dehydrogenase/reductase_SDR</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000242/index.html#cluster-1">BGC0000242</a></td>
+                <td>Lysolipin_biosynthetic_gene_cluster</td>
+                <td>33</td>
+                <td>78.9473684211</td>
+                <td>68</td>
+                <td>1.4e-11</td>
+            </tr>
+            
+            <tr>
+                <td>BAA89391.1</td>
+                <td></td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000864/index.html#cluster-1">BGC0000864</a></td>
+                <td>Eicosapentaenoic_acid-like_compound_biosynthetic_gene_cluster</td>
+                <td>29</td>
+                <td>78.5425101215</td>
+                <td>67</td>
+                <td>2.4e-11</td>
+            </tr>
+            
+            <tr>
+                <td>BAJ07861.1</td>
+                <td>putative_short-chain_dehydrogenase/reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000232/index.html#cluster-1">BGC0000232</a></td>
+                <td>Hatomarubigin_biosynthetic_gene_cluster</td>
+                <td>28</td>
+                <td>87.044534413</td>
+                <td>64</td>
+                <td>1.6e-10</td>
+            </tr>
+            
+            <tr>
+                <td>CAL80830.1</td>
+                <td>dehydrogenase-related_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000997/index.html#cluster-1">BGC0000997</a></td>
+                <td>Glidobactin_biosynthetic_gene_cluster</td>
+                <td>30</td>
+                <td>75.3036437247</td>
+                <td>64</td>
+                <td>2.7e-10</td>
+            </tr>
+            
+            <tr>
+                <td>AMR44278.1</td>
+                <td>putative_short_chain_dehydrogenase_reductase</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001398_c5/index.html#cluster-1">BGC0001398_c5</a></td>
+                <td>Phomopsins_biosynthetic_gene_cluster</td>
+                <td>26</td>
+                <td>109.71659919</td>
+                <td>56</td>
+                <td>5.5e-08</td>
+            </tr>
+            
+    </tbody>
+    </table>
+    

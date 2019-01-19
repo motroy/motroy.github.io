@@ -1,0 +1,4 @@
+signature gene	pHMM hits	e-value	bit score	number of seeds
+X_020-10_S10_03640	PF04055	3.8e-34	112.0	518
+X_020-10_S10_03640	Fer4_12	2.7e-20	66.6	84
+X_020-10_S10_03643	YcaO	2.1e-83	274.3	127

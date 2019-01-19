@@ -1,0 +1,6 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+CAJ45638.1	putative_siderophore_exporter	BGC0000454_c1	Vanchrobactin_biosynthetic_gene_cluster	49	100.968523002	374	1.5e-103
+ACR13598.1	putative_enterobactin_exporter_EntS	BGC0000451_c1	Turnerbactin_biosynthetic_gene_cluster	49	95.8837772397	347	2e-95
+ABG94127.1	transporter,_MFS_superfamily_protein	BGC0000417_c1	Rhodochelin_biosynthetic_gene_cluster	40	95.3995157385	241	2e-63
+BAH33411.1	putative_siderophore_export_protein	BGC0000371_c1	Heterobactin_biosynthetic_gene_cluster	38	96.8523002421	221	2.2e-57
+AMK48232.1	siderophore_export_protein	BGC0001351_c1	Cahuitamycins_biosynthetic_gene_cluster	35	97.0944309927	195	1.7e-49

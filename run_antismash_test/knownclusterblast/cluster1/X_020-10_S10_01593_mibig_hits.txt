@@ -1,0 +1,21 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+ACY02012.1	isochorismate_synthase	BGC0000343_c1	Enterobactin_biosynthetic_gene_cluster	47	94.8849104859	306	4.9e-83
+ACR13729.1	isochorismate_synthase_DhbC	BGC0000451_c1	Turnerbactin_biosynthetic_gene_cluster	40	98.7212276215	270	2.3e-72
+AEI70242.1	isochorismate_synthase	BGC0000401_c1	Paenibactin_biosynthetic_gene_cluster	41	100.255754476	265	1.2e-70
+AAG31127.1	MxcD	BGC0001345_c1	Myxochelin_biosynthetic_gene_cluster	39	97.6982097187	253	2.9e-67
+CBA63662.1	isochorismate_synthase	BGC0000368_c1	Griseobactin_biosynthetic_gene_cluster	42	84.9104859335	253	4.9e-67
+CAB15189.2	isochorismate_synthase	BGC0000309_c1	Bacillibactin_biosynthetic_gene_cluster	38	98.7212276215	251	1.4e-66
+ABS75235.1	DhbC	BGC0001185_c1	Bacillibactin_biosynthetic_gene_cluster	37	102.046035806	249	5.4e-66
+AAZ55905.1	isochorismate_synthase	BGC0000359_c1	Fuscachelin_biosynthetic_gene_cluster	40	99.4884910486	235	1.4e-61
+AAO07758.1	Isochorismate_synthase	BGC0000460_c1	Vulnibactin_biosynthetic_gene_cluster	36	97.6982097187	218	1e-56
+NP_230422.1	vibriobactin-specific_isochorismate_synthase	BGC0000945_c1	Vibriobactin_biosynthetic_gene_cluster	36	99.4884910486	215	8.7e-56
+BAC87913.1	probable_acinetobactin_biosynthesis_protein	BGC0000294_c1	Acinetobactin_biosynthetic_gene_cluster	35	90.0255754476	213	3.3e-55
+CAJ45635.1	isochorismate_synthase	BGC0000454_c1	Vanchrobactin_biosynthetic_gene_cluster	35	96.9309462916	213	5.6e-55
+ACU36661.1	isochorismate_synthase	BGC0000392_c1	Mirubactin_biosynthetic_gene_cluster	42	76.726342711	200	3.8e-51
+BAH33403.1	isochorismate_synthase	BGC0000371_c1	Heterobactin_biosynthetic_gene_cluster	39	86.7007672634	189	8.7e-48
+BAF98626.1	putative_isochorismate_synthase	BGC0000651_c1	KS-505a_biosynthetic_gene_cluster	39	65.9846547315	175	1.3e-43
+CAB38585.1	probable_anthranilate_synthase_component_I	BGC0000315_c1	Calcium-dependent_antibiotic_biosynthetic_gene_cluster	32	66.4961636829	119	6.5e-27
+AHB62778.1	AmbT1	BGC0001126_c1	Ambiguine_biosynthetic_gene_cluster	28	55.4987212276	77	2.8e-14
+AHI58834.1	WelT1	BGC0000668_c1	Welwitindolinone_biosynthetic_gene_cluster	28	55.4987212276	76	6.3e-14
+ACC79987.1	anthranilate_synthase	BGC0000824_c1	Scytonemin_biosynthetic_gene_cluster	29	57.5447570332	76	1.1e-13
+AIT42118.1	putative_2-amino-2-desoxy-isochorismate_synthase	BGC0001221_c1	Marinophenazines_biosynthetic_gene_cluster	26	92.5831202046	68	1.7e-11

@@ -1,0 +1,20 @@
+ClusterBlast scores for 020-10_S10_35
+
+Table of genes, locations, strands and annotations of query cluster:
+X_020-10_S10_05094	95	224	-	hypothetical protein	
+X_020-10_S10_05095	1098	1356	-	Cloacin immunity protein	
+X_020-10_S10_05096	1365	3051	-	Colicin-E3	
+X_020-10_S10_05097	3453	3873	+	hypothetical protein	
+X_020-10_S10_05098	4178	4442	+	hypothetical protein	
+X_020-10_S10_05099	4431	4731	+	hypothetical protein	
+X_020-10_S10_05100	4792	5170	-	hypothetical protein	
+X_020-10_S10_05101	5238	5418	+	Regulatory protein rop	
+X_020-10_S10_05102	5445	5976	-	hypothetical protein	
+X_020-10_S10_05103	5982	6714	-	hypothetical protein	
+X_020-10_S10_05104	6713	8678	-	hypothetical protein	
+
+
+Significant hits: 
+
+
+Details:

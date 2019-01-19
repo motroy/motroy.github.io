@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<!-- js section -->
+<!-- jQuery  -->
+<script type="text/javascript"
+        src="../../js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" src="../../js/jquery.tmpl-1.0.0pre.js"></script>
+
+  <!-- jQuery UI Support -->
+<script type="text/javascript"
+        src="../../js/jquery-ui-1.10.4.custom.min.js"></script>
+
+ <!-- Alpaca -->
+<script type="text/javascript" src="../../js/alpaca-full-mibig.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody> 
+            <tr>
+                <td>CAM02314.1</td>
+                <td>MbtH_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000349/index.html#cluster-1">BGC0000349</a></td>
+                <td>Erythrochelin_biosynthetic_gene_cluster</td>
+                <td>48</td>
+                <td>88.0597014925</td>
+                <td>74</td>
+                <td>7e-14</td>
+            </tr>
+            
+            <tr>
+                <td>AEH41800.1</td>
+                <td>HrmR</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000374/index.html#cluster-1">BGC0000374</a></td>
+                <td>Hormaomycin_biosynthetic_gene_cluster</td>
+                <td>46</td>
+                <td>88.0597014925</td>
+                <td>69</td>
+                <td>1.3e-12</td>
+            </tr>
+            
+            <tr>
+                <td>WP_028678147.1</td>
+                <td>hypothetical_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001228/index.html#cluster-1">BGC0001228</a></td>
+                <td>Retimycin_biosynthetic_gene_cluster</td>
+                <td>44</td>
+                <td>88.0597014925</td>
+                <td>67</td>
+                <td>8.5e-12</td>
+            </tr>
+            
+            <tr>
+                <td>WP_020635020.1</td>
+                <td>protein_mbtH</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001211/index.html#cluster-1">BGC0001211</a></td>
+                <td>Albachelin_biosynthetic_gene_cluster</td>
+                <td>45</td>
+                <td>89.552238806</td>
+                <td>66</td>
+                <td>1.1e-11</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ77694.1</td>
+                <td>MbtH_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000363/index.html#cluster-1">BGC0000363</a></td>
+                <td>Glycopeptidolipid_biosynthetic_gene_cluster</td>
+                <td>45</td>
+                <td>86.5671641791</td>
+                <td>66</td>
+                <td>1.5e-11</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ77714.1</td>
+                <td>MbtH_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000364/index.html#cluster-1">BGC0000364</a></td>
+                <td>Glycopeptidolipid_biosynthetic_gene_cluster</td>
+                <td>45</td>
+                <td>86.5671641791</td>
+                <td>66</td>
+                <td>1.5e-11</td>
+            </tr>
+            
+            <tr>
+                <td>sln5</td>
+                <td>MbtH-like_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001230/index.html#cluster-1">BGC0001230</a></td>
+                <td>Salinamides_biosynthetic_gene_cluster</td>
+                <td>45</td>
+                <td>89.552238806</td>
+                <td>66</td>
+                <td>1.5e-11</td>
+            </tr>
+            
+            <tr>
+                <td>ALG65332.1</td>
+                <td>Cal4</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001297/index.html#cluster-1">BGC0001297</a></td>
+                <td>WS9326_biosynthetic_gene_cluster</td>
+                <td>44</td>
+                <td>88.0597014925</td>
+                <td>66</td>
+                <td>1.5e-11</td>
+            </tr>
+            
+            <tr>
+                <td>AAT01805.1</td>
+                <td>MbtH</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000365/index.html#cluster-1">BGC0000365</a></td>
+                <td>Glycopeptidolipid_biosynthetic_gene_cluster</td>
+                <td>45</td>
+                <td>86.5671641791</td>
+                <td>66</td>
+                <td>1.9e-11</td>
+            </tr>
+            
+            <tr>
+                <td>BAH04160.1</td>
+                <td>MbtH-like_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000450/index.html#cluster-1">BGC0000450</a></td>
+                <td>Triostin_A_biosynthetic_gene_cluster</td>
+                <td>47</td>
+                <td>86.5671641791</td>
+                <td>66</td>
+                <td>1.9e-11</td>
+            </tr>
+            
+            <tr>
+                <td>AAG34186.1</td>
+                <td>SimY</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000835/index.html#cluster-1">BGC0000835</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>46</td>
+                <td>88.0597014925</td>
+                <td>65</td>
+                <td>3.2e-11</td>
+            </tr>
+            
+            <tr>
+                <td>AAK06806.1</td>
+                <td>SimX1</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001072/index.html#cluster-1">BGC0001072</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>46</td>
+                <td>88.0597014925</td>
+                <td>65</td>
+                <td>3.2e-11</td>
+            </tr>
+            
+            <tr>
+                <td>AAL15602.1</td>
+                <td>Sim-cB</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000270/index.html#cluster-1">BGC0000270</a></td>
+                <td>Simocyclinone_biosynthetic_gene_cluster</td>
+                <td>46</td>
+                <td>88.0597014925</td>
+                <td>65</td>
+                <td>3.2e-11</td>
+            </tr>
+            
+            <tr>
+                <td>AET98904.1</td>
+                <td>MbtH-like_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000415/index.html#cluster-1">BGC0000415</a></td>
+                <td>Quinomycin_biosynthetic_gene_cluster</td>
+                <td>47</td>
+                <td>86.5671641791</td>
+                <td>65</td>
+                <td>3.2e-11</td>
+            </tr>
+            
+            <tr>
+                <td>ALK27912.1</td>
+                <td>putative_antibiotic_synthesis_protein_MbtH</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001233/index.html#cluster-1">BGC0001233</a></td>
+                <td>Feglymycin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>88.0597014925</td>
+                <td>64</td>
+                <td>4.2e-11</td>
+            </tr>
+            
+            <tr>
+                <td>CBG75491.1</td>
+                <td>putative_MbtH_homolog</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000423/index.html#cluster-1">BGC0000423</a></td>
+                <td>Scabichelin_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>88.0597014925</td>
+                <td>64</td>
+                <td>5.5e-11</td>
+            </tr>
+            
+            <tr>
+                <td>ABV56590.1</td>
+                <td>KtzJ</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000378/index.html#cluster-1">BGC0000378</a></td>
+                <td>Kutznerides_biosynthetic_gene_cluster</td>
+                <td>44</td>
+                <td>88.0597014925</td>
+                <td>64</td>
+                <td>5.5e-11</td>
+            </tr>
+            
+            <tr>
+                <td>CAJ34376.1</td>
+                <td>MbtH_homologue</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000445/index.html#cluster-1">BGC0000445</a></td>
+                <td>Thiocoraline_biosynthetic_gene_cluster</td>
+                <td>43</td>
+                <td>86.5671641791</td>
+                <td>64</td>
+                <td>7.2e-11</td>
+            </tr>
+            
+            <tr>
+                <td>BAI63290.1</td>
+                <td>MbtH-like_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000434/index.html#cluster-1">BGC0000434</a></td>
+                <td>SW-163_biosynthetic_gene_cluster</td>
+                <td>42</td>
+                <td>88.0597014925</td>
+                <td>64</td>
+                <td>7.2e-11</td>
+            </tr>
+            
+            <tr>
+                <td>AMK48229.1</td>
+                <td>MbtH-like_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001351/index.html#cluster-1">BGC0001351</a></td>
+                <td>Cahuitamycins_biosynthetic_gene_cluster</td>
+                <td>44</td>
+                <td>88.0597014925</td>
+                <td>62</td>
+                <td>2.7e-10</td>
+            </tr>
+            
+            <tr>
+                <td>CAM56772.1</td>
+                <td>hypothetical_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000354/index.html#cluster-1">BGC0000354</a></td>
+                <td>Friulimicin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>88.0597014925</td>
+                <td>61</td>
+                <td>3.6e-10</td>
+            </tr>
+            
+            <tr>
+                <td>BAP34702.1</td>
+                <td>MbtH-like_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000078/index.html#cluster-1">BGC0000078</a></td>
+                <td>Incednine_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>88.0597014925</td>
+                <td>61</td>
+                <td>6.1e-10</td>
+            </tr>
+            
+            <tr>
+                <td>AAU34213.1</td>
+                <td>conserved_hypothetical_protein_MppT</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000388/index.html#cluster-1">BGC0000388</a></td>
+                <td>Mannopeptimycin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>88.0597014925</td>
+                <td>59</td>
+                <td>1.4e-09</td>
+            </tr>
+            
+            <tr>
+                <td>BAE98157.1</td>
+                <td>MbtH_like_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000339/index.html#cluster-1">BGC0000339</a></td>
+                <td>Echinomycin_biosynthetic_gene_cluster</td>
+                <td>39</td>
+                <td>88.0597014925</td>
+                <td>58</td>
+                <td>3e-09</td>
+            </tr>
+            
+            <tr>
+                <td>ALV86870.1</td>
+                <td>Tlo24</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0001406/index.html#cluster-1">BGC0001406</a></td>
+                <td>Telomycin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>88.0597014925</td>
+                <td>56</td>
+                <td>1.2e-08</td>
+            </tr>
+            
+            <tr>
+                <td>AEG64691.1</td>
+                <td>MbtH-like_protein</td>
+                <td><a href="http://mibig.secondarymetabolites.org/repository/BGC0000379/index.html#cluster-1">BGC0000379</a></td>
+                <td>Laspartomycin_biosynthetic_gene_cluster</td>
+                <td>36</td>
+                <td>88.0597014925</td>
+                <td>56</td>
+                <td>1.5e-08</td>
+            </tr>
+            
+    </tbody>
+    </table>
+    

@@ -1,0 +1,12 @@
+gene ID	gene start	gene end	gene strand	smCOG	locus_tag	annotation
+X_020-10_S10_05094	95	224	-		020-10_S10_05094	hypothetical protein
+X_020-10_S10_05095	1098	1356	-		020-10_S10_05095	Cloacin immunity protein
+X_020-10_S10_05096	1365	3051	-		020-10_S10_05096	Colicin-E3
+X_020-10_S10_05097	3453	3873	+		020-10_S10_05097	hypothetical protein
+X_020-10_S10_05098	4178	4442	+		020-10_S10_05098	hypothetical protein
+X_020-10_S10_05099	4431	4731	+		020-10_S10_05099	hypothetical protein
+X_020-10_S10_05100	4792	5170	-		020-10_S10_05100	hypothetical protein
+X_020-10_S10_05101	5238	5418	+		020-10_S10_05101	Regulatory protein rop
+X_020-10_S10_05102	5445	5976	-		020-10_S10_05102	hypothetical protein
+X_020-10_S10_05103	5982	6714	-		020-10_S10_05103	hypothetical protein
+X_020-10_S10_05104	6713	8678	-		020-10_S10_05104	hypothetical protein

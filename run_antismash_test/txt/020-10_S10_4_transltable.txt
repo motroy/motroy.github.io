@@ -1,0 +1,2 @@
+old genome accession	new genome accession
+020-10_S10_4	020-10_S10_4

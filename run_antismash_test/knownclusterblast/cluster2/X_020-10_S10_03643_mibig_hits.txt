@@ -1,0 +1,2 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+ALJ01854.1	hypothetical_protein	BGC0001285_c1	Pseudopyronine_A_/_pseudopyronine_B_biosynthetic_gene_cluster	46	99.6587030717	531	1.4e-150

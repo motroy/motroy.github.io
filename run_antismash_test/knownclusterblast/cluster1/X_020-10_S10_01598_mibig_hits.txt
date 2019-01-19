@@ -1,0 +1,2 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+ABC35419.1	carbon_starvation_protein_A	BGC0000386_c1	Malleobactin_biosynthetic_gene_cluster	71	98.1455064194	943	1.1e-274

@@ -1,0 +1,4 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+AAF23995.1	Ihf-Beta	BGC0000781_c1	O-antigen_biosynthetic_gene_cluster	73	95.7894736842	138	5.6e-33
+AAM27536.1	HimD	BGC0000784_c1	O-antigen_biosynthetic_gene_cluster	73	95.7894736842	138	5.6e-33
+AAA86369.1	GumA	BGC0000800_c1	Xanthan_biosynthetic_gene_cluster	33	100.0	67	7.1e-12

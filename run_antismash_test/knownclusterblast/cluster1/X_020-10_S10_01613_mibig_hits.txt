@@ -1,0 +1,6 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+WP_019631334.1	LacI_family_transcriptional_regulator	BGC0001364_c1	Cinnamycin_B_biosynthetic_gene_cluster	31	94.5086705202	115	1.4e-25
+CAH10185.1	ChaR3_protein	BGC0000207_c1	Chartreusin_biosynthetic_gene_cluster	28	94.5086705202	102	9.5e-22
+AFV25496.1	hypothetical_protein	BGC0000469_c1	Bottromycin_A2_biosynthetic_gene_cluster	28	98.2658959538	84	3.5e-16
+AEZ64508.1	Hera	BGC0001065_c1	Herboxidiene_biosynthetic_gene_cluster	27	94.7976878613	81	2.9e-15
+ADC45583.1	sugar-binding_transcriptional_regulator	BGC0000093_c1	Meilingmycin_biosynthetic_gene_cluster	25	96.8208092486	75	1.2e-13

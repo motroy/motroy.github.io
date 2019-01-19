@@ -1,0 +1,2 @@
+signature gene	pHMM hits	e-value	bit score	number of seeds
+X_020-10_S10_05096	Cloacin	1.4e-113	367.1	4

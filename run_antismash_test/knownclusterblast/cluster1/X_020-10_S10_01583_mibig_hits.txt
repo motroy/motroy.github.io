@@ -1,0 +1,4 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+CCM44325.1	putative_4'-phosphopantetheinyl_transferase	BGC0001056_c1	Zeamine_biosynthetic_gene_cluster	37	84.9315068493	104	2.1e-22
+BAF92600.1	phosphopantetheinyl_transferase	BGC0000118_c1	Pactamycin_biosynthetic_gene_cluster	38	56.6210045662	57	2.2e-08
+ACJ24874.1	phosphopantetheinyl_transferase	BGC0000119_c1	Pactamycin_biosynthetic_gene_cluster	38	56.6210045662	57	2.2e-08

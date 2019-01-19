@@ -1,0 +1,8 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+ACR11143.1	TonB-dependent_receptor	BGC0000451_c1	Turnerbactin_biosynthetic_gene_cluster	28	85.3099730458	201	2.5e-51
+AAB81121.1	unknown	BGC0000862_c1	Eicosapentaenoic_acid_biosynthetic_gene_cluster	28	24.3935309973	72	1.7e-12
+AAD40727.1	putative_TonB-dependent_outer_membrane_receptor_protein	BGC0001412_c1	Polysaccharide_C_biosynthetic_gene_cluster	27	25.2021563342	63	1.4e-09
+BAM09332.1	putative_ferric_acinetoferrin_receptor	BGC0000295_c1	Acinetoferrin_biosynthetic_gene_cluster	23	69.4070080863	61	6.8e-09
+AAL65282.1	QbsI	BGC0000925_c1	Quinolobactin_biosynthetic_gene_cluster	25	33.8274932615	55	2.8e-07
+CAJ87595.1	putative_pesticin_receptor	BGC0001055_c1	Yersiniabactin_biosynthetic_gene_cluster	26	28.4366576819	53	1.4e-06
+ABB02669.2	PsuA	BGC0000947_c1	Vibrioferrin_biosynthetic_gene_cluster	23	62.5336927224	51	4.1e-06

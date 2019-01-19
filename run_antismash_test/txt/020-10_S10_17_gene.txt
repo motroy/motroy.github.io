@@ -1,0 +1,9 @@
+gene ID	gene start	gene end	gene strand	smCOG	locus_tag	annotation
+X_020-10_S10_04477	90992	91625	+		020-10_S10_04477	putative GTP-binding protein EngB
+X_020-10_S10_04478	91972	94765	-		020-10_S10_04478	DNA polymerase I
+X_020-10_S10_04479	95161	96061	+		020-10_S10_04479	putative acyltransferase YihG
+X_020-10_S10_04480	96109	96733	-		020-10_S10_04480	Thiol:disulfide interchange protein DsbA
+X_020-10_S10_04481	96760	97747	-		020-10_S10_04481	Stress response kinase A
+X_020-10_S10_04482	97822	98092	-		020-10_S10_04482	Protein YihD
+X_020-10_S10_04483	98163	98745	+		020-10_S10_04483	Molybdenum cofactor guanylyltransferase
+X_020-10_S10_04484	98741	99248	+		020-10_S10_04484	Molybdopterin-guanine dinucleotide biosynthesis adapter protein

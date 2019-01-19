@@ -1,0 +1,3 @@
+#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
+BAC55130.1	ORF4	BGC0000761_c1	Exopolysaccharide_biosynthetic_gene_cluster	36	82.8996282528	144	1.3e-34
+CAF31552.1	putative_myo-inositol-3-phosphate_phosphatase	BGC0000695_c1	Fortimicin_biosynthetic_gene_cluster	33	91.8215613383	111	1.2e-24
