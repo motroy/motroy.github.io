@@ -1,2 +1,0 @@
-genome accession	geneclusters
-020-10_S10_12	020-10_S10_12_c2

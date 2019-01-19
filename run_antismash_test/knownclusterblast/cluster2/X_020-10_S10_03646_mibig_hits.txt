@@ -1,3 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-ADI58632.1	AsuB1	BGC0000187_c1	Asukamycin_biosynthetic_gene_cluster	31	100.93676815	182	1.2e-45
-AHH25585.1	AMP-dependent_synthetase_and_ligase	BGC0000957_c1	Ansatrienin_(mycotrienin)_biosynthetic_gene_cluster	29	82.4355971897	145	1.6e-34

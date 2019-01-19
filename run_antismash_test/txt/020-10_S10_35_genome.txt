@@ -1,2 +1,0 @@
-genome accession	geneclusters
-020-10_S10_35	020-10_S10_35_c4

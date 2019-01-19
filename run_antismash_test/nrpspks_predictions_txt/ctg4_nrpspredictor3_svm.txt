@@ -1,4 +1,0 @@
-#sequence-id<tab>8A-signature<tab>stachelhaus-code<tab>3class-pred<tab>large-class-pred<tab>small-class-pred<tab>single-class-pred<tab>nearest stachelhaus code<tab>NRPS1pred-large-class-pred<tab>NRPS2pred-large-class-pred<tab>outside applicability domain?<tab>coords<tab>pfam-score
-020-10_S10_01587_A1_UNK	RWMTFDVSVWEWHFFCSGEHNLYGPTEAAVDVSW	DVWHFSLVDK	hydrophobic-aliphatic	ser,thr,dhpg,hpg	ser	ser	ser	ser,thr,dhpg,hpg	ser	1	0:0	0.000000e+00
-#sequence-id<tab>8A-signature<tab>stachelhaus-code<tab>3class-pred<tab>large-class-pred<tab>small-class-pred<tab>single-class-pred<tab>nearest stachelhaus code<tab>NRPS1pred-large-class-pred<tab>NRPS2pred-large-class-pred<tab>outside applicability domain?<tab>coords<tab>pfam-score
-020-10_S10_01594_A1_UNK	S-RLYAMSSPGGSLQVGGAQQVFGMAEGLVNYTR	AMPSQGVVNK	hydrophobic-aromatic	dhb,sal	dhb,sal	dhb	dhb	orn,lys,arg	asp,asn	0	0:0	0.000000e+00

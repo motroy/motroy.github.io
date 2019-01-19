@@ -1,2 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-AAF23994.1	RpsA	BGC0000781_c1	O-antigen_biosynthetic_gene_cluster	68	46.4991023339	354	1.7e-97

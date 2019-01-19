@@ -1,4 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-CDG76949.1	Glycine_cleavage_system_transcriptional_activator_GcvA	BGC0000446_c1	Tilivalline_biosynthetic_gene_cluster	70	98.9898989899	410	1.4e-114
-ACY01997.1	DddR	BGC0000343_c1	Enterobactin_biosynthetic_gene_cluster	33	96.9696969697	151	2e-36
-AAW33977.1	PedR	BGC0000255_c1	Pederin_biosynthetic_gene_cluster	34	98.3164983165	119	6.4e-27

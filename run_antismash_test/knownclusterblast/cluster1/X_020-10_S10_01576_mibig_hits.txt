@@ -1,4 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-ABY83157.1	Azi18	BGC0000960_c1	Azinomycin_B_biosynthetic_gene_cluster	40	94.2028985507	181	1.3e-45
-ABV97177.1	Transketolase_domain_protein	BGC0000137_c1	Rifamycin_biosynthetic_gene_cluster	36	76.0869565217	126	3.7e-29
-AAS07757.1	putative_transketolase_A_subunit	BGC0000136_c1	Rifamycin_biosynthetic_gene_cluster	35	74.6376811594	120	3.5e-27

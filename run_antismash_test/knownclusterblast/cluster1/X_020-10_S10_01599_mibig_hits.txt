@@ -1,2 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-ABC34913.1	Uncharacterized_small_protein	BGC0000386_c1	Malleobactin_biosynthetic_gene_cluster	67	93.8461538462	92	1.4e-19

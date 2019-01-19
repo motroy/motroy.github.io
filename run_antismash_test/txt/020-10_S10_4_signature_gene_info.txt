@@ -1,9 +1,0 @@
-signature gene	pHMM hits	e-value	bit score	number of seeds
-X_020-10_S10_01585	Peptidase_S9	1.3e-06	22.6	64
-X_020-10_S10_01587	Condensation	2e-47	156.2	42
-X_020-10_S10_01587	AMP-binding	1.3e-116	384.1	400
-X_020-10_S10_01587	PP-binding	1.7e-11	39.0	164
-X_020-10_S10_01594	AMP-binding	5.9e-84	276.5	400
-X_020-10_S10_01595	PP-binding	5.9e-10	34.1	164
-X_020-10_S10_01602	adh_short	1.6e-35	117.2	230
-X_020-10_S10_01602	adh_short_C2	4.4e-34	113.0	47

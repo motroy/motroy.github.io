@@ -1,2 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-AUTOORF_00001	Glutathione_S-transferase,_unnamed_subgroup_2	BGC0000446_c1	Tilivalline_biosynthetic_gene_cluster	62	57.7114427861	138	9e-33

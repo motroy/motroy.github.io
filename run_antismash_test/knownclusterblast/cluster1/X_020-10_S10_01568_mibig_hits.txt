@@ -1,2 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-ACY01993.1	DddT	BGC0000343_c1	Enterobactin_biosynthetic_gene_cluster	40	75.1846381093	363	5.8e-100

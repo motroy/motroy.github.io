@@ -1,2 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-NP_230425.1	iron-enterobactin_transporter_substrate-binding_protein	BGC0000945_c1	Vibriobactin_biosynthetic_gene_cluster	36	95.6112852665	169	5.8e-42

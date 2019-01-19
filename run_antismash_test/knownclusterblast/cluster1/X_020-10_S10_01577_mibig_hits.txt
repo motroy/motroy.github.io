@@ -1,2 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-CAJ42315.1	putative_transcriptional_regulator	BGC0000273_c1	Steffimycin_biosynthetic_gene_cluster	27	98.417721519	102	8.6e-22

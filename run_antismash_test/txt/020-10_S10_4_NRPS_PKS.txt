@@ -1,9 +1,0 @@
-Cluster_ID	NRPSPKS_ID	annotation	aSDomain	score	evalue	domain_type	subtype	domain_start	domain_end	KR activity	KR stereochemistry	NRPSPredictor2	Stachelhaus	Minowa	pkssignature	consensus
-020-10_S10_4_c1	X_020-10_S10_01583	PKS/NRPS-like protein	nrpspksdomains_020-10_S10_01583_Xdom01	27.7	4.80E-09	ACPS		57731	57902							
-020-10_S10_4_c1	X_020-10_S10_01587	NRPS	nrpspksdomains_020-10_S10_01587_Xdom01	306.4	5.70E-94	Condensation	Condensation_Starter	62221	63118							
-020-10_S10_4_c1	X_020-10_S10_01587	NRPS	nrpspksdomains_020-10_S10_01587_A1	384.1	1.60E-117	AMP-binding		63658	64870				ser			
-020-10_S10_4_c1	X_020-10_S10_01587	NRPS	nrpspksdomains_020-10_S10_01587_Xdom02	48.4	1.90E-15	PCP		65140	65344							
-020-10_S10_4_c1	X_020-10_S10_01587	NRPS	nrpspksdomains_020-10_S10_01587_Xdom03	144.2	2.10E-44	Thioesterase		65416	66061							
-020-10_S10_4_c1	X_020-10_S10_01594	NRPS-like protein	nrpspksdomains_020-10_S10_01594_A1	276.5	7.40E-85	AMP-binding		72924	74160				no_call			
-020-10_S10_4_c1	X_020-10_S10_01596	PKS/NRPS-like protein	nrpspksdomains_020-10_S10_01596_KR1	41.0	4.60E-13	PKS_KR		75399	75729	inactive	C2					
-020-10_S10_4_c1	X_020-10_S10_01602	PKS/NRPS-like protein	nrpspksdomains_020-10_S10_01602_KR1	44.6	3.70E-14	PKS_KR		80245	80761	inactive	C2					

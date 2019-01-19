@@ -1,2 +1,0 @@
-#Protein	Description	MiBIG Cluster	MiBIG Product	Percent ID	Percent Coverage	BLAST Score	 Evalue
-CAE52341.1	ComA-like_protein	BGC0001088_c1	Albicidin_biosynthetic_gene_cluster	49	97.8102189781	124	1.2e-28
