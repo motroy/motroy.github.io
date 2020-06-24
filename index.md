@@ -28,5 +28,3 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ## [Publications](https://motroy.github.io/publications_list.html)
-
-## [Use Phandango](https://motroy.github.io/phandango_test/index.html)
